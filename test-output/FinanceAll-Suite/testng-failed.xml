@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FinanceAll-Suite]" guice-stage="DEVELOPMENT" verbose="2">
+  <test thread-count="5" name="FinanceAll(failed)" verbose="2">
+    <classes>
+      <class name="financeSuite.FinanceAllAPI">
+        <methods>
+          <include name="createJournalEntry"/>
+          <include name="beforeMethod"/>
+          <include name="updateWorkflowActionReactivate"/>
+          <include name="deactivateCostCenter"/>
+          <include name="costCenterSearch"/>
+          <include name="setUp"/>
+          <include name="setAccountStatus"/>
+          <include name="approvalByGroupAccountingManager"/>
+          <include name="updateCostCenter"/>
+          <include name="updateWorkflowActionDeactivate"/>
+          <include name="glSearchCompany"/>
+          <include name="checkChartOfAccountsBalance"/>
+          <include name="duplicateCostCenterName"/>
+          <include name="searchChartOfAccountsMaster"/>
+          <include name="journalEntrySearch"/>
+          <include name="updateChartOfAccounts"/>
+          <include name="journalEntryCount"/>
+          <include name="searchChartOfAccountsForDeactivate"/>
+          <include name="reviewChartOfAccountsForDeactivate"/>
+          <include name="approvalBySeniorAccountant"/>
+          <include name="costCenterCount"/>
+          <include name="generateJeNumber"/>
+          <include name="searchChartOfAccountsForReactivate"/>
+          <include name="createChartOfAccounts"/>
+          <include name="verifyJePostedStatus"/>
+          <include name="approvalByFinanceController"/>
+          <include name="updateWorkflowActionChartOfAccounts"/>
+          <include name="duplicateCostCenterCode"/>
+          <include name="searchChartOfAccountsForApproval"/>
+          <include name="createCostCenter"/>
+          <include name="chartOfAccountsSearchBeforeBalanceCheck"/>
+          <include name="reviewChartOfAccounts"/>
+        </methods>
+      </class> <!-- financeSuite.FinanceAllAPI -->
+    </classes>
+  </test> <!-- FinanceAll(failed) -->
+</suite> <!-- Failed suite [FinanceAll-Suite] -->

@@ -1,0 +1,304 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/3</td>
+</tr><tr>
+<td>Started on:</td><td>Fri May 22 20:46:32 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>68 seconds (68805 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='financeSuite.FinanceDebitMemoAPI.verifyDebitMemoFinalState()'><b>verifyDebitMemoFinalState</b><br>Test class: financeSuite.FinanceDebitMemoAPI<br>Test method: Re-search the Debit Memo and verify it transitioned out of DRAFT/PENDING_REVIEW</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceDebitMemoAPI@1d9bec4d</td></tr>
+<tr>
+<td title='financeSuite.FinanceDebitMemoAPI.approvalWorkflow_L1_and_L2_forAmount15k()'><b>approvalWorkflow_L1_and_L2_forAmount15k</b><br>Test class: financeSuite.FinanceDebitMemoAPI<br>Test method: Approval workflow L1+L2: amount 15k (>10k, <=1L) - GAM then FC</td>
+<td></td>
+<td>12</td>
+<td>financeSuite.FinanceDebitMemoAPI@1d9bec4d</td></tr>
+<tr>
+<td title='financeSuite.FinanceDebitMemoAPI.approvalWorkflow_L1_and_L3_forAmount150k()'><b>approvalWorkflow_L1_and_L3_forAmount150k</b><br>Test class: financeSuite.FinanceDebitMemoAPI<br>Test method: Approval workflow L1+L3: amount 150k (>1L) - GAM then SGAM (FC not in 10k-1L band)</td>
+<td></td>
+<td>12</td>
+<td>financeSuite.FinanceDebitMemoAPI@1d9bec4d</td></tr>
+<tr>
+<td title='financeSuite.FinanceDebitMemoAPI.approvalWorkflow_L1_and_L3_above1Lakh()'><b>approvalWorkflow_L1_and_L3_above1Lakh</b><br>Test class: financeSuite.FinanceDebitMemoAPI<br>Test method: Approval workflow L1+L3: amount 101k (>1L) - GAM then SGAM (FC not in 10k-1L band)</td>
+<td></td>
+<td>12</td>
+<td>financeSuite.FinanceDebitMemoAPI@1d9bec4d</td></tr>
+<tr>
+<td title='financeSuite.FinanceDebitMemoAPI.verifyNoApprovalRequiredWhenAmountBelow10k()'><b>verifyNoApprovalRequiredWhenAmountBelow10k</b><br>Test class: financeSuite.FinanceDebitMemoAPI<br>Test method: Verify amount <= 10k does not require L1/L2/L3 approvers</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceDebitMemoAPI@1d9bec4d</td></tr>
+<tr>
+<td title='financeSuite.FinanceDebitMemoAPI.createDebitMemo()'><b>createDebitMemo</b><br>Test class: financeSuite.FinanceDebitMemoAPI<br>Test method: Create Debit Memo (Accountant - Vivek)</td>
+<td></td>
+<td>3</td>
+<td>financeSuite.FinanceDebitMemoAPI@1d9bec4d</td></tr>
+<tr>
+<td title='financeSuite.FinanceDebitMemoAPI.submitDebitMemoForReview()'><b>submitDebitMemoForReview</b><br>Test class: financeSuite.FinanceDebitMemoAPI<br>Test method: Submit Debit Memo for review (status=PENDING_REVIEW)</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceDebitMemoAPI@1d9bec4d</td></tr>
+<tr>
+<td title='financeSuite.FinanceDebitMemoAPI.debitMemoSearch()'><b>debitMemoSearch</b><br>Test class: financeSuite.FinanceDebitMemoAPI<br>Test method: Search debit memos / invoice adjustments</td>
+<td></td>
+<td>5</td>
+<td>financeSuite.FinanceDebitMemoAPI@1d9bec4d</td></tr>
+<tr>
+<td title='financeSuite.FinanceDebitMemoAPI.searchEligibleApInvoice()'><b>searchEligibleApInvoice</b><br>Test class: financeSuite.FinanceDebitMemoAPI<br>Test method: Find an eligible (POSTED/PAID) AP invoice and capture id / glAccount / costCenter</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceDebitMemoAPI@1d9bec4d</td></tr>
+<tr>
+<td title='financeSuite.FinanceDebitMemoAPI.approvalWorkflow_L1_and_L2_forAmount50k()'><b>approvalWorkflow_L1_and_L2_forAmount50k</b><br>Test class: financeSuite.FinanceDebitMemoAPI<br>Test method: Approval workflow L1+L2: amount 50k (10k-1L band) - GAM then FC</td>
+<td></td>
+<td>11</td>
+<td>financeSuite.FinanceDebitMemoAPI@1d9bec4d</td></tr>
+<tr>
+<td title='financeSuite.FinanceDebitMemoAPI.debitMemoCount()'><b>debitMemoCount</b><br>Test class: financeSuite.FinanceDebitMemoAPI<br>Test method: Get debit memo / invoice-adjustment count</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceDebitMemoAPI@1d9bec4d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='financeSuite.FinanceDebitMemoAPI.approveDebitMemoByFinanceController()'><b>approveDebitMemoByFinanceController</b><br>Test class: financeSuite.FinanceDebitMemoAPI<br>Test method: Level-2 approval by Finance Controller (Abinaya) - required for amount > 10k (up to 1L)</td>
+<td><div><pre>java.lang.Throwable: Method financeSuite.FinanceDebitMemoAPI.approveDebitMemoByFinanceController() on instance financeSuite.FinanceDebitMemoAPI@1d9bec4d depends on not successfully finished methods 
+[financeSuite.FinanceDebitMemoAPI.approveDebitMemoByGroupAccountingManager() on instance financeSuite.FinanceDebitMemoAPI@1d9bec4d]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace127635147", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace127635147'><pre>java.lang.Throwable: Method financeSuite.FinanceDebitMemoAPI.approveDebitMemoByFinanceController() on instance financeSuite.FinanceDebitMemoAPI@1d9bec4d depends on not successfully finished methods 
+[financeSuite.FinanceDebitMemoAPI.approveDebitMemoByGroupAccountingManager() on instance financeSuite.FinanceDebitMemoAPI@1d9bec4d]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>financeSuite.FinanceDebitMemoAPI@1d9bec4d</td></tr>
+<tr>
+<td title='financeSuite.FinanceDebitMemoAPI.approveDebitMemoBySeniorGroupAccountingManager()'><b>approveDebitMemoBySeniorGroupAccountingManager</b><br>Test class: financeSuite.FinanceDebitMemoAPI<br>Test method: Level-3 approval by Senior Group Accounting Manager (Suyash) - required for amount > 1 lakh</td>
+<td><div><pre>java.lang.Throwable: Method financeSuite.FinanceDebitMemoAPI.approveDebitMemoBySeniorGroupAccountingManager() on instance financeSuite.FinanceDebitMemoAPI@1d9bec4d depends on not successfully finished methods 
+[financeSuite.FinanceDebitMemoAPI.approveDebitMemoByFinanceController() on instance financeSuite.FinanceDebitMemoAPI@1d9bec4d]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1471558227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1471558227'><pre>java.lang.Throwable: Method financeSuite.FinanceDebitMemoAPI.approveDebitMemoBySeniorGroupAccountingManager() on instance financeSuite.FinanceDebitMemoAPI@1d9bec4d depends on not successfully finished methods 
+[financeSuite.FinanceDebitMemoAPI.approveDebitMemoByFinanceController() on instance financeSuite.FinanceDebitMemoAPI@1d9bec4d]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>financeSuite.FinanceDebitMemoAPI@1d9bec4d</td></tr>
+<tr>
+<td title='financeSuite.FinanceDebitMemoAPI.approveDebitMemoByGroupAccountingManager()'><b>approveDebitMemoByGroupAccountingManager</b><br>Test class: financeSuite.FinanceDebitMemoAPI<br>Test method: Level-1 approval by Group Accounting Manager (Rohini) - required for amount > 10k</td>
+<td><div><pre>org.testng.SkipException: approveDebitMemoByGroupAccountingManager: amount 1000.0 not above tier minimum (10000.0). Group Accounting Manager - Rohini (L1) approval not required.
+	at financeSuite.FinanceDebitMemoAPI.approveDebitMemoAs(FinanceDebitMemoAPI.java:780)
+	at financeSuite.FinanceDebitMemoAPI.approveDebitMemoByGroupAccountingManager(FinanceDebitMemoAPI.java:1085)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace159910421", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace159910421'><pre>org.testng.SkipException: approveDebitMemoByGroupAccountingManager: amount 1000.0 not above tier minimum (10000.0). Group Accounting Manager - Rohini (L1) approval not required.
+	at financeSuite.FinanceDebitMemoAPI.approveDebitMemoAs(FinanceDebitMemoAPI.java:780)
+	at financeSuite.FinanceDebitMemoAPI.approveDebitMemoByGroupAccountingManager(FinanceDebitMemoAPI.java:1085)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>financeSuite.FinanceDebitMemoAPI@1d9bec4d</td></tr>
+</table><p>
+</body>
+</html>

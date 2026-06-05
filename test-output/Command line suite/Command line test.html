@@ -1,0 +1,520 @@
+<html>
+<head>
+<title>TestNG:  Command line test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Command line test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>51/2/3</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Mar 24 15:13:38 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>92 seconds (92312 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createGlAccountWithInvalidData()'><b>createGlAccountWithInvalidData</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create GL account with invalid account type</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	createGlAccountWithInvalidData: Expected one of [400, 409, 422, 500], got 200
+	at financeSuite.FinanceAllAPI.createGlAccountWithInvalidData(FinanceAllAPI.java:1985)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace954225330", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace954225330'><pre>java.lang.AssertionError: The following asserts failed:
+	createGlAccountWithInvalidData: Expected one of [400, 409, 422, 500], got 200
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at financeSuite.FinanceAllAPI.createGlAccountWithInvalidData(FinanceAllAPI.java:1985)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.TestNG.privateMain(TestNG.java:1430)
+	at org.testng.TestNG.main(TestNG.java:1394)
+</pre></div></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.approvalBySeniorAccountant()'><b>approvalBySeniorAccountant</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Approve by senior accountant</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	approvalBySeniorAccountant: Expected one of [200], got 403
+	at financeSuite.FinanceAllAPI.approvalBySeniorAccountant(FinanceAllAPI.java:3497)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1373194140", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1373194140'><pre>java.lang.AssertionError: The following asserts failed:
+	approvalBySeniorAccountant: Expected one of [200], got 403
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at financeSuite.FinanceAllAPI.approvalBySeniorAccountant(FinanceAllAPI.java:3497)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.TestNG.privateMain(TestNG.java:1430)
+	at org.testng.TestNG.main(TestNG.java:1394)
+</pre></div></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.profitCenterCount()'><b>profitCenterCount</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Get profit center count</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.duplicateGlAccountName()'><b>duplicateGlAccountName</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Validate duplicate GL account name handling</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createJournalEntryWithMissingMandatoryFields()'><b>createJournalEntryWithMissingMandatoryFields</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create journal entry with missing mandatory fields</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createProfitCenterWithInvalidCode()'><b>createProfitCenterWithInvalidCode</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create profit center with invalid code</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.glSearchCompany()'><b>glSearchCompany</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search GL company</td>
+<td></td>
+<td>3</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.checkChartOfAccountsBalance()'><b>checkChartOfAccountsBalance</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Check chart of accounts balance</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.duplicateProfitCenterName()'><b>duplicateProfitCenterName</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Validate duplicate profit center name handling</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.duplicateCostCenterName()'><b>duplicateCostCenterName</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Validate duplicate cost center name handling</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createChartOfAccounts()'><b>createChartOfAccounts</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create chart of accounts</td>
+<td></td>
+<td>6</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createProfitCenterWithMissingMandatoryFields()'><b>createProfitCenterWithMissingMandatoryFields</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create profit center with missing mandatory fields</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.updateWorkflowActionReactivate()'><b>updateWorkflowActionReactivate</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Update workflow action for reactivate</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.deactivateCostCenter()'><b>deactivateCostCenter</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Deactivate cost center</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.searchChartOfAccountsForDeactivate()'><b>searchChartOfAccountsForDeactivate</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search chart of accounts for deactivate</td>
+<td></td>
+<td>14</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.searchChartOfAccountsForApproval()'><b>searchChartOfAccountsForApproval</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search chart of accounts for approval</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.chartOfAccountsSearchBeforeBalanceCheck()'><b>chartOfAccountsSearchBeforeBalanceCheck</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search chart of accounts before balance check</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.reviewChartOfAccounts()'><b>reviewChartOfAccounts</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Review chart of accounts</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createCompany()'><b>createCompany</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create company with valid payload</td>
+<td></td>
+<td>2</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createJournalEntryWithInvalidData()'><b>createJournalEntryWithInvalidData</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create journal entry with invalid journal number</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createGlAccountWithMissingMandatoryFields()'><b>createGlAccountWithMissingMandatoryFields</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create GL account with missing mandatory fields</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.duplicateCostCenterCode()'><b>duplicateCostCenterCode</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Validate duplicate cost center code handling</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.costCenterSearch()'><b>costCenterSearch</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search cost center records</td>
+<td></td>
+<td>2</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.updateWorkflowActionDeactivate()'><b>updateWorkflowActionDeactivate</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Update workflow action for deactivate</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.verifyCompanySearchFindsCreatedCompany()'><b>verifyCompanySearchFindsCreatedCompany</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Verify created company appears in search</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.companyCount()'><b>companyCount</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Get company count</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.chartOfAccountsCountV3()'><b>chartOfAccountsCountV3</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Get chart of accounts count v3</td>
+<td></td>
+<td>5</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.updateProfitCenter()'><b>updateProfitCenter</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Update profit center</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.journalEntrySearch()'><b>journalEntrySearch</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search journal entries</td>
+<td></td>
+<td>2</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createCompanyWithMissingMandatoryFields()'><b>createCompanyWithMissingMandatoryFields</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create company with missing mandatory fields</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.searchChartOfAccountsMaster()'><b>searchChartOfAccountsMaster</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search chart of accounts master</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.searchChartOfAccountsForReactivate()'><b>searchChartOfAccountsForReactivate</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search chart of accounts for reactivate</td>
+<td></td>
+<td>7</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.duplicateCompanyName()'><b>duplicateCompanyName</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Validate duplicate company name handling</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.updateWorkflowActionChartOfAccounts()'><b>updateWorkflowActionChartOfAccounts</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Update workflow action for chart of accounts</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.updateCostCenter()'><b>updateCostCenter</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Update cost center</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createCostCenterWithMissingMandatoryFields()'><b>createCostCenterWithMissingMandatoryFields</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create cost center with missing mandatory fields</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.updateChartOfAccounts()'><b>updateChartOfAccounts</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Update chart of accounts</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createCompanyWithInvalidCompanyCode()'><b>createCompanyWithInvalidCompanyCode</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create company with invalid company code</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.searchCurrency()'><b>searchCurrency</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search currency records</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createCostCenterWithInvalidCode()'><b>createCostCenterWithInvalidCode</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create cost center with invalid code</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.setAccountStatus()'><b>setAccountStatus</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Set chart of accounts status</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createJournalEntry()'><b>createJournalEntry</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create journal entry</td>
+<td></td>
+<td>2</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.profitCenterSearch()'><b>profitCenterSearch</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search profit center records</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createProfitCenter()'><b>createProfitCenter</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create profit center</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createCostCenter()'><b>createCostCenter</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create cost center</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.duplicateCompanyCode()'><b>duplicateCompanyCode</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Validate duplicate company code handling</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.duplicateProfitCenterCode()'><b>duplicateProfitCenterCode</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Validate duplicate profit center code handling</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.journalEntryCount()'><b>journalEntryCount</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Get journal entry count</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.costCenterCount()'><b>costCenterCount</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Get cost center count</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.searchCompany()'><b>searchCompany</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search company records</td>
+<td></td>
+<td>2</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.chartOfAccountsSearchV3()'><b>chartOfAccountsSearchV3</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search chart of accounts v3</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.reviewChartOfAccountsForDeactivate()'><b>reviewChartOfAccountsForDeactivate</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Review chart of accounts for deactivate</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.generateJeNumber()'><b>generateJeNumber</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Generate journal entry number</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.verifyJePostedStatus()'><b>verifyJePostedStatus</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Verify journal entry posted status</td>
+<td><div><pre>java.lang.Throwable: Method financeSuite.FinanceAllAPI.verifyJePostedStatus() on instance financeSuite.FinanceAllAPI@201b6b6f depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.approvalByGroupAccountingManager() on instance financeSuite.FinanceAllAPI@201b6b6f]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1218677266", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1218677266'><pre>java.lang.Throwable: Method financeSuite.FinanceAllAPI.verifyJePostedStatus() on instance financeSuite.FinanceAllAPI@201b6b6f depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.approvalByGroupAccountingManager() on instance financeSuite.FinanceAllAPI@201b6b6f]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.TestNG.privateMain(TestNG.java:1430)
+	at org.testng.TestNG.main(TestNG.java:1394)
+</pre></div></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.approvalByGroupAccountingManager()'><b>approvalByGroupAccountingManager</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Approve by group accounting manager</td>
+<td><div><pre>java.lang.Throwable: Method financeSuite.FinanceAllAPI.approvalByGroupAccountingManager() on instance financeSuite.FinanceAllAPI@201b6b6f depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.approvalByFinanceController() on instance financeSuite.FinanceAllAPI@201b6b6f]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1162358658", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1162358658'><pre>java.lang.Throwable: Method financeSuite.FinanceAllAPI.approvalByGroupAccountingManager() on instance financeSuite.FinanceAllAPI@201b6b6f depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.approvalByFinanceController() on instance financeSuite.FinanceAllAPI@201b6b6f]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.TestNG.privateMain(TestNG.java:1430)
+	at org.testng.TestNG.main(TestNG.java:1394)
+</pre></div></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.approvalByFinanceController()'><b>approvalByFinanceController</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Approve by finance controller</td>
+<td><div><pre>java.lang.Throwable: Method financeSuite.FinanceAllAPI.approvalByFinanceController() on instance financeSuite.FinanceAllAPI@201b6b6f depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.approvalBySeniorAccountant() on instance financeSuite.FinanceAllAPI@201b6b6f]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace402847244", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace402847244'><pre>java.lang.Throwable: Method financeSuite.FinanceAllAPI.approvalByFinanceController() on instance financeSuite.FinanceAllAPI@201b6b6f depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.approvalBySeniorAccountant() on instance financeSuite.FinanceAllAPI@201b6b6f]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.TestNG.privateMain(TestNG.java:1430)
+	at org.testng.TestNG.main(TestNG.java:1394)
+</pre></div></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@201b6b6f</td></tr>
+</table><p>
+</body>
+</html>

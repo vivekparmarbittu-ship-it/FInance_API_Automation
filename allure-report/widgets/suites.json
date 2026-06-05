@@ -1,0 +1,1 @@
+{"total":2,"items":[{"uid":"287943c1beac6b8f5eb5e7f86b4fc00c","name":"FinanceAllAPI","statistic":{"failed":0,"broken":5,"skipped":10,"passed":0,"unknown":0,"total":15}},{"uid":"76bac84b3baa8d600d823e081125b9ae","name":"FinanceCreditMemoAPI","statistic":{"failed":0,"broken":0,"skipped":14,"passed":0,"unknown":0,"total":14}}]}

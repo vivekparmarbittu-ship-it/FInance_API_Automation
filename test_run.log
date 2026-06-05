@@ -1,0 +1,42 @@
+WARNING: A terminally deprecated method in sun.misc.Unsafe has been called
+WARNING: sun.misc.Unsafe::staticFieldBase has been called by com.google.inject.internal.aop.HiddenClassDefiner (file:/opt/homebrew/Cellar/maven/3.9.11/libexec/lib/guice-5.1.0-classes.jar)
+WARNING: Please consider reporting this to the maintainers of class com.google.inject.internal.aop.HiddenClassDefiner
+WARNING: sun.misc.Unsafe::staticFieldBase will be removed in a future release
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for RestAssuredAutomationSuits:RestAssuredAutomationSuits:jar:0.0.1-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: org.slf4j:slf4j-api:jar -> version 2.0.7 vs 2.0.13 @ line 103, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] 
+[INFO] -------< RestAssuredAutomationSuits:RestAssuredAutomationSuits >--------
+[INFO] Building RestAssuredAutomationSuits 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.6.3:java (default-cli) @ RestAssuredAutomationSuits ---
+16:19:13.377 [base.TestRunner.main()] INFO  base.TestRunner - ========= TestRunner Started =========
+16:19:13.378 [base.TestRunner.main()] INFO  base.TestRunner - Loaded config.properties
+16:19:13.379 [base.TestRunner.main()] INFO  base.TestRunner - Selected env = SIT
+16:19:13.379 [base.TestRunner.main()] INFO  base.TestRunner - Selected module = finance
+16:19:13.379 [base.TestRunner.main()] INFO  base.TestRunner - Env config loaded: baseUri=https://one-sit.humain.ai, tokenPath=/auth/realms/BNTV/protocol/openid-connect/token, username present?=true
+16:19:13.434 [base.TestRunner.main()] INFO  base.TestRunner - Running single test class: financeSuite.FinanceInvoiceWorkflowAPI
+16:19:13 INFO  org.testng.internal.Utils - [TestNG] Running:
+  Command line suite
+
+
+===============================================
+Command line suite
+Total tests run: 8, Passes: 0, Failures: 0, Skips: 8
+Configuration Failures: 1, Skips: 0
+===============================================
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.302 s
+[INFO] Finished at: 2026-05-26T16:19:13+05:30
+[INFO] ------------------------------------------------------------------------

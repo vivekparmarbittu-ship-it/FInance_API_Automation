@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+  FinanceUnauthorized.xml — runs only the Unauthorized-user negative tests.
+
+  These tests verify that using a token from a user without the correct role
+  returns 401/403 when attempting to create resources.
+
+  Both Sanity and CRUDSanity groups are included because the unauthorized tests
+  (CRUDSanity) depend on search/setup methods (Sanity) via dependsOnMethods.
+  The <methods> include block restricts execution to only the 5 unauthorized
+  test methods; TestNG automatically pulls in their prerequisite methods.
+-->
+
+<suite name="Finance-Unauthorized-Suite" verbose="2">
+
+  <test name="Finance-Unauthorized" preserve-order="true">
+
+    <groups>
+      <run>
+        <include name="Sanity"/>
+        <include name="CRUDSanity"/>
+      </run>
+    </groups>
+
+    <classes>
+      <class name="financeSuite.FinanceAllAPI">
+        <methods>
+          <include name="createCompanyWithUnauthorizedUser"/>
+          <include name="createCostCenterWithUnauthorizedUser"/>
+          <include name="createProfitCenterWithUnauthorizedUser"/>
+          <include name="createGlAccountWithUnauthorizedUser"/>
+          <include name="createJournalEntryWithUnauthorizedUser"/>
+        </methods>
+      </class>
+    </classes>
+
+  </test>
+
+</suite>

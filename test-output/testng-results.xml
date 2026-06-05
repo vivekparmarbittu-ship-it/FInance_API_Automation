@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="0" failed="0" skipped="14">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-06-05T14:09:55 IST" name="FinanceCreditMemoAPI" finished-at="2026-06-05T14:09:56 IST" duration-ms="1139">
+    <groups>
+      <group name="CreditMemoApproval">
+        <method signature="FinanceCreditMemoAPI.verifyNoApprovalRequiredWhenAmountBelow10k()[pri:10, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="verifyNoApprovalRequiredWhenAmountBelow10k" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.approvalWorkflow_L1_and_L2_forAmount15k()[pri:20, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="approvalWorkflow_L1_and_L2_forAmount15k" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.approvalWorkflow_L1_and_L3_above1Lakh()[pri:21, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="approvalWorkflow_L1_and_L3_above1Lakh" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.approvalWorkflow_L1_and_L2_forAmount50k()[pri:22, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="approvalWorkflow_L1_and_L2_forAmount50k" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.approvalWorkflow_L1_and_L3_forAmount150k()[pri:23, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="approvalWorkflow_L1_and_L3_forAmount150k" class="financeSuite.FinanceCreditMemoAPI"/>
+      </group> <!-- CreditMemoApproval -->
+      <group name="Sanity">
+        <method signature="FinanceCreditMemoAPI.creditMemoCount()[pri:1, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="creditMemoCount" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.creditMemoSearch()[pri:2, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="creditMemoSearch" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.searchEligibleApInvoice()[pri:3, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="searchEligibleApInvoice" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.createCreditMemo()[pri:4, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="createCreditMemo" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.submitCreditMemoForReview()[pri:5, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="submitCreditMemoForReview" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager()[pri:6, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="approveCreditMemoByGroupAccountingManager" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.approveCreditMemoByFinanceController()[pri:7, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="approveCreditMemoByFinanceController" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.approveCreditMemoBySeniorGroupAccountingManager()[pri:8, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="approveCreditMemoBySeniorGroupAccountingManager" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.verifyCreditMemoFinalState()[pri:9, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="verifyCreditMemoFinalState" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.verifyNoApprovalRequiredWhenAmountBelow10k()[pri:10, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="verifyNoApprovalRequiredWhenAmountBelow10k" class="financeSuite.FinanceCreditMemoAPI"/>
+      </group> <!-- Sanity -->
+      <group name="CreditMemo">
+        <method signature="FinanceCreditMemoAPI.creditMemoCount()[pri:1, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="creditMemoCount" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.creditMemoSearch()[pri:2, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="creditMemoSearch" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.searchEligibleApInvoice()[pri:3, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="searchEligibleApInvoice" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.createCreditMemo()[pri:4, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="createCreditMemo" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.submitCreditMemoForReview()[pri:5, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="submitCreditMemoForReview" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager()[pri:6, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="approveCreditMemoByGroupAccountingManager" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.approveCreditMemoByFinanceController()[pri:7, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="approveCreditMemoByFinanceController" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.approveCreditMemoBySeniorGroupAccountingManager()[pri:8, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="approveCreditMemoBySeniorGroupAccountingManager" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.verifyCreditMemoFinalState()[pri:9, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="verifyCreditMemoFinalState" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.verifyNoApprovalRequiredWhenAmountBelow10k()[pri:10, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="verifyNoApprovalRequiredWhenAmountBelow10k" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.approvalWorkflow_L1_and_L2_forAmount15k()[pri:20, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="approvalWorkflow_L1_and_L2_forAmount15k" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.approvalWorkflow_L1_and_L3_above1Lakh()[pri:21, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="approvalWorkflow_L1_and_L3_above1Lakh" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.approvalWorkflow_L1_and_L2_forAmount50k()[pri:22, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="approvalWorkflow_L1_and_L2_forAmount50k" class="financeSuite.FinanceCreditMemoAPI"/>
+        <method signature="FinanceCreditMemoAPI.approvalWorkflow_L1_and_L3_forAmount150k()[pri:23, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" name="approvalWorkflow_L1_and_L3_forAmount150k" class="financeSuite.FinanceCreditMemoAPI"/>
+      </group> <!-- CreditMemo -->
+    </groups>
+    <test started-at="2026-06-05T14:09:55 IST" name="FinanceCreditMemoAPI-Test" finished-at="2026-06-05T14:09:56 IST" duration-ms="1139">
+      <class name="financeSuite.FinanceCreditMemoAPI">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" started-at="2026-06-05T14:09:55 IST" name="setUp" finished-at="2026-06-05T14:09:56 IST" duration-ms="1059" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="creditMemoCount()[pri:1, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" started-at="2026-06-05T14:09:56 IST" name="creditMemoCount" description="Get credit memo / invoice-adjustment count" finished-at="2026-06-05T14:09:56 IST" duration-ms="12" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Credit Memo creator token (Senior Accountant - Khushbu) is unavailable. Check unHumainosSeniorAccountant in config.properties for env=humainDemo.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Credit Memo creator token (Senior Accountant - Khushbu) is unavailable. Check unHumainosSeniorAccountant in config.properties for env=humainDemo.
+at financeSuite.FinanceCreditMemoAPI.assertCreatorToken(FinanceCreditMemoAPI.java:291)
+at financeSuite.FinanceCreditMemoAPI.creditMemoCount(FinanceCreditMemoAPI.java:855)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at base.TestRunner.main(TestRunner.java:93)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creditMemoCount -->
+        <test-method signature="creditMemoSearch()[pri:2, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" started-at="2026-06-05T14:09:56 IST" name="creditMemoSearch" description="Search credit memos / invoice adjustments" finished-at="2026-06-05T14:09:56 IST" depends-on-methods="financeSuite.FinanceCreditMemoAPI.creditMemoCount" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method financeSuite.FinanceCreditMemoAPI.creditMemoSearch() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.creditMemoCount() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.creditMemoSearch() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.creditMemoCount() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at base.TestRunner.main(TestRunner.java:93)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- creditMemoSearch -->
+        <test-method signature="searchEligibleApInvoice()[pri:3, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" started-at="2026-06-05T14:09:56 IST" name="searchEligibleApInvoice" description="Find an eligible (POSTED/PAID) AP invoice and capture id / glAccount / costCenter" finished-at="2026-06-05T14:09:56 IST" depends-on-methods="financeSuite.FinanceCreditMemoAPI.creditMemoSearch" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method financeSuite.FinanceCreditMemoAPI.searchEligibleApInvoice() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.creditMemoSearch() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.searchEligibleApInvoice() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.creditMemoSearch() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at base.TestRunner.main(TestRunner.java:93)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchEligibleApInvoice -->
+        <test-method signature="createCreditMemo()[pri:4, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" started-at="2026-06-05T14:09:56 IST" name="createCreditMemo" description="Create Credit Memo (Senior Accountant - Khushbu)" finished-at="2026-06-05T14:09:56 IST" depends-on-methods="financeSuite.FinanceCreditMemoAPI.searchEligibleApInvoice" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method financeSuite.FinanceCreditMemoAPI.createCreditMemo() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.searchEligibleApInvoice() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.createCreditMemo() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.searchEligibleApInvoice() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at base.TestRunner.main(TestRunner.java:93)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createCreditMemo -->
+        <test-method signature="submitCreditMemoForReview()[pri:5, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" started-at="2026-06-05T14:09:56 IST" name="submitCreditMemoForReview" description="Submit Credit Memo for review (status=PENDING_REVIEW)" finished-at="2026-06-05T14:09:56 IST" depends-on-methods="financeSuite.FinanceCreditMemoAPI.createCreditMemo" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method financeSuite.FinanceCreditMemoAPI.submitCreditMemoForReview() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.createCreditMemo() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.submitCreditMemoForReview() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.createCreditMemo() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at base.TestRunner.main(TestRunner.java:93)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitCreditMemoForReview -->
+        <test-method signature="approveCreditMemoByGroupAccountingManager()[pri:6, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" started-at="2026-06-05T14:09:56 IST" name="approveCreditMemoByGroupAccountingManager" description="Level-1 approval by Group Accounting Manager (Rohini) - required for amount &gt; 10k" finished-at="2026-06-05T14:09:56 IST" depends-on-methods="financeSuite.FinanceCreditMemoAPI.submitCreditMemoForReview" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.submitCreditMemoForReview() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.submitCreditMemoForReview() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at base.TestRunner.main(TestRunner.java:93)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approveCreditMemoByGroupAccountingManager -->
+        <test-method signature="approveCreditMemoByFinanceController()[pri:7, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" started-at="2026-06-05T14:09:56 IST" name="approveCreditMemoByFinanceController" description="Level-2 approval by Finance Controller (Abinaya) - required for amount &gt; 10k (up to 1L)" finished-at="2026-06-05T14:09:56 IST" depends-on-methods="financeSuite.FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoByFinanceController() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoByFinanceController() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at base.TestRunner.main(TestRunner.java:93)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approveCreditMemoByFinanceController -->
+        <test-method signature="approveCreditMemoBySeniorGroupAccountingManager()[pri:8, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" started-at="2026-06-05T14:09:56 IST" name="approveCreditMemoBySeniorGroupAccountingManager" description="Level-3 approval by Senior Group Accounting Manager (Suyash) - required for amount &gt; 1 lakh" finished-at="2026-06-05T14:09:56 IST" depends-on-methods="financeSuite.FinanceCreditMemoAPI.approveCreditMemoByFinanceController" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoBySeniorGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.approveCreditMemoByFinanceController() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoBySeniorGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.approveCreditMemoByFinanceController() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at base.TestRunner.main(TestRunner.java:93)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approveCreditMemoBySeniorGroupAccountingManager -->
+        <test-method signature="verifyCreditMemoFinalState()[pri:9, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" started-at="2026-06-05T14:09:56 IST" name="verifyCreditMemoFinalState" description="Re-search the Credit Memo and verify it transitioned out of DRAFT/PENDING_REVIEW" finished-at="2026-06-05T14:09:56 IST" depends-on-methods="financeSuite.FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[verifyCreditMemoFinalState: no created credit memo]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: verifyCreditMemoFinalState: no created credit memo
+at financeSuite.FinanceCreditMemoAPI.verifyCreditMemoFinalState(FinanceCreditMemoAPI.java:1198)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at base.TestRunner.main(TestRunner.java:93)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCreditMemoFinalState -->
+        <test-method signature="verifyNoApprovalRequiredWhenAmountBelow10k()[pri:10, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" started-at="2026-06-05T14:09:56 IST" name="verifyNoApprovalRequiredWhenAmountBelow10k" description="Verify amount &lt;= 10k does not require L1/L2/L3 approvers" finished-at="2026-06-05T14:09:56 IST" depends-on-methods="financeSuite.FinanceCreditMemoAPI.createCreditMemo" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method financeSuite.FinanceCreditMemoAPI.verifyNoApprovalRequiredWhenAmountBelow10k() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.createCreditMemo() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.verifyNoApprovalRequiredWhenAmountBelow10k() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.createCreditMemo() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at base.TestRunner.main(TestRunner.java:93)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNoApprovalRequiredWhenAmountBelow10k -->
+        <test-method signature="approvalWorkflow_L1_and_L2_forAmount15k()[pri:20, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" started-at="2026-06-05T14:09:56 IST" name="approvalWorkflow_L1_and_L2_forAmount15k" description="Approval workflow L1+L2: amount 15k (&gt;10k, &lt;=1L) - GAM then FC" finished-at="2026-06-05T14:09:56 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Credit Memo creator token (Senior Accountant - Khushbu) is unavailable. Check unHumainosSeniorAccountant in config.properties for env=humainDemo.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Credit Memo creator token (Senior Accountant - Khushbu) is unavailable. Check unHumainosSeniorAccountant in config.properties for env=humainDemo.
+at financeSuite.FinanceCreditMemoAPI.assertCreatorToken(FinanceCreditMemoAPI.java:291)
+at financeSuite.FinanceCreditMemoAPI.runApprovalWorkflow(FinanceCreditMemoAPI.java:814)
+at financeSuite.FinanceCreditMemoAPI.approvalWorkflow_L1_and_L2_forAmount15k(FinanceCreditMemoAPI.java:1171)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at base.TestRunner.main(TestRunner.java:93)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approvalWorkflow_L1_and_L2_forAmount15k -->
+        <test-method signature="approvalWorkflow_L1_and_L3_above1Lakh()[pri:21, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" started-at="2026-06-05T14:09:56 IST" name="approvalWorkflow_L1_and_L3_above1Lakh" description="Approval workflow L1+L3: amount 101k (&gt;1L) - GAM then SGAM (FC not in 10k-1L band)" finished-at="2026-06-05T14:09:56 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Credit Memo creator token (Senior Accountant - Khushbu) is unavailable. Check unHumainosSeniorAccountant in config.properties for env=humainDemo.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Credit Memo creator token (Senior Accountant - Khushbu) is unavailable. Check unHumainosSeniorAccountant in config.properties for env=humainDemo.
+at financeSuite.FinanceCreditMemoAPI.assertCreatorToken(FinanceCreditMemoAPI.java:291)
+at financeSuite.FinanceCreditMemoAPI.runApprovalWorkflow(FinanceCreditMemoAPI.java:814)
+at financeSuite.FinanceCreditMemoAPI.approvalWorkflow_L1_and_L3_above1Lakh(FinanceCreditMemoAPI.java:1177)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at base.TestRunner.main(TestRunner.java:93)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approvalWorkflow_L1_and_L3_above1Lakh -->
+        <test-method signature="approvalWorkflow_L1_and_L2_forAmount50k()[pri:22, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" started-at="2026-06-05T14:09:56 IST" name="approvalWorkflow_L1_and_L2_forAmount50k" description="Approval workflow L1+L2: amount 50k (10k-1L band) - GAM then FC" finished-at="2026-06-05T14:09:56 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Credit Memo creator token (Senior Accountant - Khushbu) is unavailable. Check unHumainosSeniorAccountant in config.properties for env=humainDemo.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Credit Memo creator token (Senior Accountant - Khushbu) is unavailable. Check unHumainosSeniorAccountant in config.properties for env=humainDemo.
+at financeSuite.FinanceCreditMemoAPI.assertCreatorToken(FinanceCreditMemoAPI.java:291)
+at financeSuite.FinanceCreditMemoAPI.runApprovalWorkflow(FinanceCreditMemoAPI.java:814)
+at financeSuite.FinanceCreditMemoAPI.approvalWorkflow_L1_and_L2_forAmount50k(FinanceCreditMemoAPI.java:1183)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at base.TestRunner.main(TestRunner.java:93)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approvalWorkflow_L1_and_L2_forAmount50k -->
+        <test-method signature="approvalWorkflow_L1_and_L3_forAmount150k()[pri:23, instance:financeSuite.FinanceCreditMemoAPI@44f3fe83]" started-at="2026-06-05T14:09:56 IST" name="approvalWorkflow_L1_and_L3_forAmount150k" description="Approval workflow L1+L3: amount 150k (&gt;1L) - GAM then SGAM (FC not in 10k-1L band)" finished-at="2026-06-05T14:09:56 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Credit Memo creator token (Senior Accountant - Khushbu) is unavailable. Check unHumainosSeniorAccountant in config.properties for env=humainDemo.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Credit Memo creator token (Senior Accountant - Khushbu) is unavailable. Check unHumainosSeniorAccountant in config.properties for env=humainDemo.
+at financeSuite.FinanceCreditMemoAPI.assertCreatorToken(FinanceCreditMemoAPI.java:291)
+at financeSuite.FinanceCreditMemoAPI.runApprovalWorkflow(FinanceCreditMemoAPI.java:814)
+at financeSuite.FinanceCreditMemoAPI.approvalWorkflow_L1_and_L3_forAmount150k(FinanceCreditMemoAPI.java:1189)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at base.TestRunner.main(TestRunner.java:93)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- approvalWorkflow_L1_and_L3_forAmount150k -->
+      </class> <!-- financeSuite.FinanceCreditMemoAPI -->
+    </test> <!-- FinanceCreditMemoAPI-Test -->
+  </suite> <!-- FinanceCreditMemoAPI -->
+</testng-results>

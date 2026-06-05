@@ -1,0 +1,216 @@
+19:30:58.645 [main] INFO  base.TestRunner - ========= TestRunner Started =========
+19:30:58.646 [main] INFO  base.TestRunner - Loaded config.properties
+19:30:58.651 [main] INFO  base.TestRunner - Selected env = SIT
+19:30:58.651 [main] INFO  base.TestRunner - Selected module = creditmemo
+19:30:58.651 [main] INFO  base.TestRunner - Env config loaded: baseUri=https://one-sit.humain.ai, tokenPath=/auth/realms/BNTV/protocol/openid-connect/token, username present?=true
+19:30:58.741 [main] INFO  base.TestRunner - Extracted XML resource 'xml/FinanceCreditMemo.xml' to temp file: /var/folders/yn/7sht5m811w1d9qj1n7lf4x8c0000gn/T/testng-suites-6622169841355725105/FinanceCreditMemo.xml
+19:30:58.742 [main] INFO  base.TestRunner - Will run TestNG suite files: [/var/folders/yn/7sht5m811w1d9qj1n7lf4x8c0000gn/T/testng-suites-6622169841355725105/FinanceCreditMemo.xml]
+19:30:58 DEBUG org.testng.TestNG - suiteXmlPath: "/var/folders/yn/7sht5m811w1d9qj1n7lf4x8c0000gn/T/testng-suites-6622169841355725105/FinanceCreditMemo.xml"
+...
+... TestNG [WORKING] by Cédric Beust (cedric@beust.com)
+...
+
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 4 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 6 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+19:30:58 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /private/var/folders/yn/7sht5m811w1d9qj1n7lf4x8c0000gn/T/testng-suites-6622169841355725105/FinanceCreditMemo.xml
+
+19:30:58 INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 1 ms.
+19:30:58.919 [main] INFO  base.BaseTestDemoNetSingularity - ========= Base Setup Started =========
+19:30:58.919 [main] INFO  base.BaseTestDemoNetSingularity - Resolved environment: SIT
+19:30:58.919 [main] DEBUG base.BaseTestDemoNetSingularity - baseUri already present: https://one-sit.humain.ai
+19:30:59.126 [main] INFO  base.BaseTestDemoNetSingularity - Environment (effective): SIT
+19:30:59.126 [main] INFO  base.BaseTestDemoNetSingularity - Base URI: https://one-sit.humain.ai
+19:30:59.127 [main] INFO  utilities.TokenManager - Requesting token for env 'SIT' from https://one-sit.humain.ai/auth/realms/BNTV/protocol/openid-connect/token
+19:30:59.128 [main] INFO  utilities.TokenManager - --------------------- Requesting for token -------------------------------------
+19:31:01.208 [main] INFO  utilities.TokenManager - Response of token API: {"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJiX21peUs5dERpc0QtLWxTdGo0blg1QW1hb1gzRUhzcnZHeXNBOVRWRDhjIn0.eyJleHAiOjE3Nzk0NjIwNjAsImlhdCI6MTc3OTQ1ODQ2MCwianRpIjoib25ydHJvOmNmYWIxOWI0LTAyZWItNjAxOC1jMWZkLTExNDQ0ZTVjMTQxOSIsImlzcyI6Imh0dHBzOi8vb25lLXNpdC5odW1haW4uYWkvYXV0aC9yZWFsbXMvQk5UViIsInN1YiI6IjNmMWE4N2EyLWFmMDQtNDExNy1iYzg2LWFmNmFhMmJkNjEwOSIsInR5cCI6IkJlYXJlciIsImF6cCI6Imh1bWFpbm9zIiwic2lkIjoiTklXdGUzV0hOVVFCbnJJZ1IycDFUUFF0IiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9vbmUtc2l0Lmh1bWFpbi5haSIsImh0dHBzOi8vbG9jYWxob3N0IiwiaHR0cHM6Ly9vbmUtc2l0Lmh1bWFpbi5haSIsImh0dHA6Ly9sb2NhbGhvc3QiXSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiYWN0aXZlRGl2aXNpb24iOiIxIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImN1c3RvbWVyX3V1aWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAiLCJmdWxsTmFtZSI6Ikxva2VzaCBQYXRpZGFyIiwib3JnYW5pc2F0aW9uUm9sZSI6IkNvbmZpZ3VyYXRvciIsInByZWZlcnJlZF91c2VybmFtZSI6Imxva2VzaC5wYXRpZGFyQHZpc2lvbndhdmVzLmNvbSIsImxvY2FsZSI6ImVuIiwiZ2l2ZW5fbmFtZSI6Ikxva2VzaCIsImlzRmlyc3RUaW1lTG9naW4iOiJmYWxzZSIsInVzZXJJZCI6IjE0MjMyMSIsImN1c3RvbWVyTmFtZSI6Ikh1bWFpbm9zIiwibmFtZSI6Ikxva2VzaCBQYXRpZGFyIiwiY3VzdG9tZXJJZCI6IjEiLCJwcm9maWxlVGVtcGxhdGUiOiJ7XCIxXCI6W1wiRmluYW5jZSBjb25maWd1cmF0b3JcIixcIkh1bWFpbm9zIHBsYXRmb3JtIGNvbmZpZ3VyYXRvclwiLFwiUHJvY3VyZW1lbnQgTGVhZFwiXX0iLCJmYW1pbHlfbmFtZSI6IlBhdGlkYXIiLCJlbWFpbCI6Imxva2VzaC5wYXRpZGFyQHZpc2lvbndhdmVzLmNvbSJ9.T_38u38swJzdJGiAYdgSiKB-5owazc86Vknpe_lklcKvMxja0RQN4rnno8tb77zk78a5mKASZX8j5-yokRG2JsY97k9AN1afoEr3by-VLWmUBeCxhtVLY42FK668EmfcjF2HGNx8wc-70RZ0q9sPXewW-ql8RlS68lwjeRRaIONE1AqFO84j9jILVRVeEbFSESzroHPgT3e8cvg5fEiPH42B-mpH-sWpAWb1l0IeiBpYVdPHnHTX3D8zObQuvDzCYI0P9rEhjBanaZgGum7Z0CvWMKhSrITK3Mi3ePQWGzAc23FQqojokO_9FrVEiRgJQT2nIV700PPTlps7sXwvkA","expires_in":3600,"refresh_expires_in":54000,"refresh_token":"eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI5MTE1MDUzMS01NjljLTQ5OWQtOGEyZC1iYTVjY2M5YmRkYmQifQ.eyJleHAiOjE3Nzk1MTI0NjAsImlhdCI6MTc3OTQ1ODQ2MCwianRpIjoiZmNhOTY5ZWYtY2RkYS0yMmI1LTFhMGMtNjBlOThiYTMzMjI5IiwiaXNzIjoiaHR0cHM6Ly9vbmUtc2l0Lmh1bWFpbi5haS9hdXRoL3JlYWxtcy9CTlRWIiwiYXVkIjoiaHR0cHM6Ly9vbmUtc2l0Lmh1bWFpbi5haS9hdXRoL3JlYWxtcy9CTlRWIiwic3ViIjoiM2YxYTg3YTItYWYwNC00MTE3LWJjODYtYWY2YWEyYmQ2MTA5IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6Imh1bWFpbm9zIiwic2lkIjoiTklXdGUzV0hOVVFCbnJJZ1IycDFUUFF0Iiwic2NvcGUiOiJ3ZWItb3JpZ2lucyBwcm9maWxlIGVtYWlsIGJhc2ljIn0.M-b6cfGdzBsA-eu77Adpn17QbtMzQV-Y7-N2gpqYzuBKdMKDp4flVkRL-sDhWbsDmujYTdFYXLrS1jo1qoVgBQ","token_type":"Bearer","not-before-policy":1779296557,"session_state":"NIWte3WHNUQBnrIgR2p1TPQt","scope":"profile email"}
+19:31:01.426 [main] INFO  utilities.TokenManager - Token for env 'SIT' cached. Expires in 3600 seconds
+19:31:01.426 [main] INFO  base.BaseTestDemoNetSingularity - Token initialized successfully (length=1694)
+19:31:05.756 [main] INFO  base.BaseTestDemoNetSingularity - Credit Memo Creator (Senior Accountant): userId=ea24846e-420a-42bb-ac52-304e53a53e6d, tokenLength=1388
+19:31:05.756 [main] INFO  base.BaseTestDemoNetSingularity - L1 Approver - Group Accounting Manager: userId=b1fff434-009b-434d-81bc-11eb9256ffb6, tokenLength=1417
+19:31:05.756 [main] INFO  base.BaseTestDemoNetSingularity - L2 Approver - Finance Controller: userId=4315deb5-1ea8-444a-83ec-ed7f9c13d701, tokenLength=1428
+19:31:05.756 [main] INFO  base.BaseTestDemoNetSingularity - L3 Approver - Senior Group Accounting Manager: userId=142f4df7-eee1-42da-92f5-b7353c0d1e75, tokenLength=1388
+19:31:05.756 [main] INFO  base.BaseTestDemoNetSingularity - Credit Memo amount: 1000.0
+19:31:05.756 [main] INFO  base.BaseTestDemoNetSingularity - Approval tiers: >10k=GAM (L1), 10k-1L=FC (L2), >1L=SGAM (L3)
+19:31:05.761 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:05.761 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: creditMemoCount
+19:31:05.761 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:06.295 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:06.295 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: creditMemoSearch
+19:31:06.295 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:11.034 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:11.034 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: searchEligibleApInvoice
+19:31:11.034 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:12.526 [main] INFO  base.BaseTestDemoNetSingularity - searchEligibleApInvoice -> apInvoice.id=1496, totalAmount=1023.5, glAccount.id=775, costCenter.id=123560, cmAmount=1000.0
+19:31:12.527 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:12.527 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createCreditMemo
+19:31:12.527 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:12.528 [main] INFO  base.BaseTestDemoNetSingularity - uploadVendorCreditNote source=classpath: vendor-credit-note.pdf (31836 bytes)
+19:31:13.615 [main] INFO  base.BaseTestDemoNetSingularity - uploadVendorCreditNote keyLabel='attachmentEntities' status=200 body={"creatorId":143080,"creatorName":"Khushbu Patil","creationTime":1779458473541,"lastModifierId":143080,"lastModifierName":"Khushbu Patil","modificationTime":1779458473541,"id":24951,"filename":"vendor-credit-note-1779458472528.pdf","path":"uploads/documents/37379/vendor-credit-note-1779458472528.pdf","extension":"pdf","size":31836,"latitude":null,"longitude":null,"azimuth":null,"captureTime":null,...
+19:31:15.022 [main] INFO  base.BaseTestDemoNetSingularity - createCreditMemo REQUEST payload={"adjustmentDate":"2026-05-22T14:01:13.631Z","adjustmentReason":"Goods Returned","amount":"1000","explanation":"Automated Credit Memo - 1779458473631","apInvoice":{"id":1496},"glAccount":{"id":775},"costCenter":{"id":123560},"attachmentEntities":[{"attachmentId":37379,"entityType":"INVOICE_ADJUSTMENT","fileName":"vendor-credit-note-1779458472528.pdf"}]}
+19:31:15.023 [main] INFO  base.BaseTestDemoNetSingularity - createCreditMemo POST /apim/financial-accounting/1.0/rest/invoice-adjustment/create-credit-memo status=200 body={"creator":{"userId":143080,"firstName":null,"middleName":null,"lastName":null,"userName":"Khushbu Patil","email":null,"organisationRole":null},"createdTime":1779458474069,"lastModifier":{"userId":143080,"firstName":null,"middleName":null,"lastName":null,"userName":"Khushbu Patil","email":null,"organisationRole":null},"modifiedTime":1779458474069,"id":174,"adjustmentNumber":"CM-KLKP-2026-12123","a...
+19:31:15.045 [main] INFO  base.BaseTestDemoNetSingularity - createCreditMemo SUCCESS id=174 adjustmentNumber=CM-KLKP-2026-12123
+19:31:15.046 [main] INFO  base.BaseTestDemoNetSingularity - linkAttachmentToCreditMemo skipped (use -DcmLinkAttachment=true to enable). attachmentEntities in create-credit-memo already links the document.
+19:31:15.047 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:15.047 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: submitCreditMemoForReview
+19:31:15.047 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:15.662 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:15.662 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: approveCreditMemoByGroupAccountingManager
+19:31:15.662 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+SKIPPED: FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager
+Reason: approveCreditMemoByGroupAccountingManager: amount 1000.0 not above tier minimum (10000.0). Group Accounting Manager - Rohini (L1) approval not required.
+org.testng.SkipException: approveCreditMemoByGroupAccountingManager: amount 1000.0 not above tier minimum (10000.0). Group Accounting Manager - Rohini (L1) approval not required.
+	at financeSuite.FinanceCreditMemoAPI.approveCreditMemoAs(FinanceCreditMemoAPI.java:1075)
+	at financeSuite.FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager(FinanceCreditMemoAPI.java:1138)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceCreditMemoAPI.approveCreditMemoByFinanceController
+Reason: Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoByFinanceController() on instance financeSuite.FinanceCreditMemoAPI@246f8b8b depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@246f8b8b]
+java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoByFinanceController() on instance financeSuite.FinanceCreditMemoAPI@246f8b8b depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@246f8b8b]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceCreditMemoAPI.approveCreditMemoBySeniorGroupAccountingManager
+Reason: Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoBySeniorGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@246f8b8b depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.approveCreditMemoByFinanceController() on instance financeSuite.FinanceCreditMemoAPI@246f8b8b]
+java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoBySeniorGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@246f8b8b depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.approveCreditMemoByFinanceController() on instance financeSuite.FinanceCreditMemoAPI@246f8b8b]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+19:31:15.674 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:15.674 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: verifyCreditMemoFinalState
+19:31:15.674 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:16.274 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:16.274 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: verifyNoApprovalRequiredWhenAmountBelow10k
+19:31:16.274 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:16.276 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:16.276 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: approvalWorkflow_L1_and_L2_forAmount15k
+19:31:16.276 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:22.244 [main] INFO  base.BaseTestDemoNetSingularity - uploadVendorCreditNote source=classpath: vendor-credit-note.pdf (31836 bytes)
+19:31:23.150 [main] INFO  base.BaseTestDemoNetSingularity - uploadVendorCreditNote keyLabel='attachmentEntities' status=200 body={"creatorId":143080,"creatorName":"Khushbu Patil","creationTime":1779458483142,"lastModifierId":143080,"lastModifierName":"Khushbu Patil","modificationTime":1779458483142,"id":24952,"filename":"vendor-credit-note-1779458482243.pdf","path":"uploads/documents/37380/vendor-credit-note-1779458482243.pdf","extension":"pdf","size":31836,"latitude":null,"longitude":null,"azimuth":null,"captureTime":null,...
+19:31:24.377 [main] INFO  base.BaseTestDemoNetSingularity - approvalWorkflow_create_L1+L2_15k REQUEST payload={"adjustmentDate":"2026-05-22T14:01:23.158Z","adjustmentReason":"Goods Returned","amount":"15000","explanation":"Automated Credit Memo - 1779458483158","apInvoice":{"id":1098},"glAccount":{"id":698},"costCenter":{"id":123575},"attachmentEntities":[{"attachmentId":37380,"entityType":"INVOICE_ADJUSTMENT","fileName":"vendor-credit-note-1779458482243.pdf"}]}
+19:31:24.377 [main] INFO  base.BaseTestDemoNetSingularity - approvalWorkflow_create_L1+L2_15k POST /apim/financial-accounting/1.0/rest/invoice-adjustment/create-credit-memo status=200 body={"creator":{"userId":143080,"firstName":null,"middleName":null,"lastName":null,"userName":"Khushbu Patil","email":null,"organisationRole":null},"createdTime":1779458483584,"lastModifier":{"userId":143080,"firstName":null,"middleName":null,"lastName":null,"userName":"Khushbu Patil","email":null,"organisationRole":null},"modifiedTime":1779458483584,"id":175,"adjustmentNumber":"CM-HULK-2026-91913","a...
+19:31:24.391 [main] INFO  base.BaseTestDemoNetSingularity - approvalWorkflow_create_L1+L2_15k SUCCESS id=175 adjustmentNumber=CM-HULK-2026-91913
+19:31:24.391 [main] INFO  base.BaseTestDemoNetSingularity - linkAttachmentToCreditMemo skipped (use -DcmLinkAttachment=true to enable). attachmentEntities in create-credit-memo already links the document.
+19:31:25.077 [main] INFO  base.BaseTestDemoNetSingularity - approvalWorkflow L1+L2_15k submit done for creditMemoId=175
+19:31:28.260 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:28.261 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: approvalWorkflow_L1_and_L3_above1Lakh
+19:31:28.261 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:33.309 [main] INFO  base.BaseTestDemoNetSingularity - uploadVendorCreditNote source=classpath: vendor-credit-note.pdf (31836 bytes)
+19:31:34.089 [main] INFO  base.BaseTestDemoNetSingularity - uploadVendorCreditNote keyLabel='attachmentEntities' status=200 body={"creatorId":143080,"creatorName":"Khushbu Patil","creationTime":1779458494079,"lastModifierId":143080,"lastModifierName":"Khushbu Patil","modificationTime":1779458494079,"id":24953,"filename":"vendor-credit-note-1779458493309.pdf","path":"uploads/documents/37381/vendor-credit-note-1779458493309.pdf","extension":"pdf","size":31836,"latitude":null,"longitude":null,"azimuth":null,"captureTime":null,...
+19:31:35.224 [main] INFO  base.BaseTestDemoNetSingularity - approvalWorkflow_create_L1+L3_101k REQUEST payload={"adjustmentDate":"2026-05-22T14:01:34.094Z","adjustmentReason":"Goods Returned","amount":"101000","explanation":"Automated Credit Memo - 1779458494094","apInvoice":{"id":1098},"glAccount":{"id":698},"costCenter":{"id":123575},"attachmentEntities":[{"attachmentId":37381,"entityType":"INVOICE_ADJUSTMENT","fileName":"vendor-credit-note-1779458493309.pdf"}]}
+19:31:35.225 [main] INFO  base.BaseTestDemoNetSingularity - approvalWorkflow_create_L1+L3_101k POST /apim/financial-accounting/1.0/rest/invoice-adjustment/create-credit-memo status=200 body={"creator":{"userId":143080,"firstName":null,"middleName":null,"lastName":null,"userName":"Khushbu Patil","email":null,"organisationRole":null},"createdTime":1779458494519,"lastModifier":{"userId":143080,"firstName":null,"middleName":null,"lastName":null,"userName":"Khushbu Patil","email":null,"organisationRole":null},"modifiedTime":1779458494519,"id":176,"adjustmentNumber":"CM-HULK-2026-91913","a...
+19:31:35.240 [main] INFO  base.BaseTestDemoNetSingularity - approvalWorkflow_create_L1+L3_101k SUCCESS id=176 adjustmentNumber=CM-HULK-2026-91913
+19:31:35.240 [main] INFO  base.BaseTestDemoNetSingularity - linkAttachmentToCreditMemo skipped (use -DcmLinkAttachment=true to enable). attachmentEntities in create-credit-memo already links the document.
+19:31:35.876 [main] INFO  base.BaseTestDemoNetSingularity - approvalWorkflow L1+L3_101k submit done for creditMemoId=176
+19:31:38.976 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:38.976 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: approvalWorkflow_L1_and_L2_forAmount50k
+19:31:38.976 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:44.087 [main] INFO  base.BaseTestDemoNetSingularity - uploadVendorCreditNote source=classpath: vendor-credit-note.pdf (31836 bytes)
+19:31:44.782 [main] INFO  base.BaseTestDemoNetSingularity - uploadVendorCreditNote keyLabel='attachmentEntities' status=200 body={"creatorId":143080,"creatorName":"Khushbu Patil","creationTime":1779458504776,"lastModifierId":143080,"lastModifierName":"Khushbu Patil","modificationTime":1779458504776,"id":24954,"filename":"vendor-credit-note-1779458504086.pdf","path":"uploads/documents/37382/vendor-credit-note-1779458504086.pdf","extension":"pdf","size":31836,"latitude":null,"longitude":null,"azimuth":null,"captureTime":null,...
+19:31:45.987 [main] INFO  base.BaseTestDemoNetSingularity - approvalWorkflow_create_L1+L2_50k REQUEST payload={"adjustmentDate":"2026-05-22T14:01:44.794Z","adjustmentReason":"Goods Returned","amount":"50000","explanation":"Automated Credit Memo - 1779458504794","apInvoice":{"id":1098},"glAccount":{"id":698},"costCenter":{"id":123575},"attachmentEntities":[{"attachmentId":37382,"entityType":"INVOICE_ADJUSTMENT","fileName":"vendor-credit-note-1779458504086.pdf"}]}
+19:31:45.987 [main] INFO  base.BaseTestDemoNetSingularity - approvalWorkflow_create_L1+L2_50k POST /apim/financial-accounting/1.0/rest/invoice-adjustment/create-credit-memo status=200 body={"creator":{"userId":143080,"firstName":null,"middleName":null,"lastName":null,"userName":"Khushbu Patil","email":null,"organisationRole":null},"createdTime":1779458505240,"lastModifier":{"userId":143080,"firstName":null,"middleName":null,"lastName":null,"userName":"Khushbu Patil","email":null,"organisationRole":null},"modifiedTime":1779458505240,"id":177,"adjustmentNumber":"CM-HULK-2026-91913","a...
+19:31:46.007 [main] INFO  base.BaseTestDemoNetSingularity - approvalWorkflow_create_L1+L2_50k SUCCESS id=177 adjustmentNumber=CM-HULK-2026-91913
+19:31:46.007 [main] INFO  base.BaseTestDemoNetSingularity - linkAttachmentToCreditMemo skipped (use -DcmLinkAttachment=true to enable). attachmentEntities in create-credit-memo already links the document.
+19:31:46.678 [main] INFO  base.BaseTestDemoNetSingularity - approvalWorkflow L1+L2_50k submit done for creditMemoId=177
+19:31:49.616 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:49.617 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: approvalWorkflow_L1_and_L3_forAmount150k
+19:31:49.617 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+19:31:54.675 [main] INFO  base.BaseTestDemoNetSingularity - uploadVendorCreditNote source=classpath: vendor-credit-note.pdf (31836 bytes)
+19:31:55.310 [main] INFO  base.BaseTestDemoNetSingularity - uploadVendorCreditNote keyLabel='attachmentEntities' status=200 body={"creatorId":143080,"creatorName":"Khushbu Patil","creationTime":1779458515309,"lastModifierId":143080,"lastModifierName":"Khushbu Patil","modificationTime":1779458515309,"id":24955,"filename":"vendor-credit-note-1779458514675.pdf","path":"uploads/documents/37383/vendor-credit-note-1779458514675.pdf","extension":"pdf","size":31836,"latitude":null,"longitude":null,"azimuth":null,"captureTime":null,...
+19:31:56.520 [main] INFO  base.BaseTestDemoNetSingularity - approvalWorkflow_create_L1+L3_150k REQUEST payload={"adjustmentDate":"2026-05-22T14:01:55.319Z","adjustmentReason":"Goods Returned","amount":"150000","explanation":"Automated Credit Memo - 1779458515319","apInvoice":{"id":1098},"glAccount":{"id":698},"costCenter":{"id":123575},"attachmentEntities":[{"attachmentId":37383,"entityType":"INVOICE_ADJUSTMENT","fileName":"vendor-credit-note-1779458514675.pdf"}]}
+19:31:56.524 [main] INFO  base.BaseTestDemoNetSingularity - approvalWorkflow_create_L1+L3_150k POST /apim/financial-accounting/1.0/rest/invoice-adjustment/create-credit-memo status=200 body={"creator":{"userId":143080,"firstName":null,"middleName":null,"lastName":null,"userName":"Khushbu Patil","email":null,"organisationRole":null},"createdTime":1779458515757,"lastModifier":{"userId":143080,"firstName":null,"middleName":null,"lastName":null,"userName":"Khushbu Patil","email":null,"organisationRole":null},"modifiedTime":1779458515757,"id":178,"adjustmentNumber":"CM-HULK-2026-91913","a...
+19:31:56.542 [main] INFO  base.BaseTestDemoNetSingularity - approvalWorkflow_create_L1+L3_150k SUCCESS id=178 adjustmentNumber=CM-HULK-2026-91913
+19:31:56.542 [main] INFO  base.BaseTestDemoNetSingularity - linkAttachmentToCreditMemo skipped (use -DcmLinkAttachment=true to enable). attachmentEntities in create-credit-memo already links the document.
+19:31:57.229 [main] INFO  base.BaseTestDemoNetSingularity - approvalWorkflow L1+L3_150k submit done for creditMemoId=178
+
+===============================================
+FinanceCreditMemo-Suite
+Total tests run: 14, Passes: 11, Failures: 0, Skips: 3
+===============================================
+
+19:32:00 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@367e0b0e: 12 ms
+19:32:00 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@63b334fd: 4 ms
+19:32:00 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@8616368: 8 ms
+19:32:00 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@c4fc610: 0 ms

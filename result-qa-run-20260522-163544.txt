@@ -1,0 +1,1524 @@
+16:35:49.846 [main] INFO  base.TestRunner - ========= TestRunner Started =========
+16:35:49.848 [main] INFO  base.TestRunner - Loaded config.properties
+16:35:49.854 [main] INFO  base.TestRunner - Selected env = QA
+16:35:49.854 [main] INFO  base.TestRunner - Selected module = finance
+16:35:49.854 [main] INFO  base.TestRunner - Env config loaded: baseUri=https://qa.visionwaves.com, tokenPath=/auth/realms/BNTV/protocol/openid-connect/token, username present?=true
+16:35:49.952 [main] INFO  base.TestRunner - Extracted XML resource 'xml/FinanceAll.xml' to temp file: /var/folders/yn/7sht5m811w1d9qj1n7lf4x8c0000gn/T/testng-suites-16560034536889057479/FinanceAll.xml
+16:35:49.952 [main] INFO  base.TestRunner - Will run TestNG suite files: [/var/folders/yn/7sht5m811w1d9qj1n7lf4x8c0000gn/T/testng-suites-16560034536889057479/FinanceAll.xml]
+16:35:49 DEBUG org.testng.TestNG - suiteXmlPath: "/var/folders/yn/7sht5m811w1d9qj1n7lf4x8c0000gn/T/testng-suites-16560034536889057479/FinanceAll.xml"
+...
+... TestNG [WORKING] by Cédric Beust (cedric@beust.com)
+...
+
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 5 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 19 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+16:35:50 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /private/var/folders/yn/7sht5m811w1d9qj1n7lf4x8c0000gn/T/testng-suites-16560034536889057479/FinanceAll.xml
+
+16:35:50 INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 3 ms.
+16:35:50.195 [main] INFO  base.BaseTestDemoNetSingularity - ========= Base Setup Started =========
+16:35:50.195 [main] INFO  base.BaseTestDemoNetSingularity - Resolved environment: QA
+16:35:50.195 [main] DEBUG base.BaseTestDemoNetSingularity - baseUri already present: https://qa.visionwaves.com
+16:35:50.408 [main] INFO  base.BaseTestDemoNetSingularity - Environment (effective): QA
+16:35:50.408 [main] INFO  base.BaseTestDemoNetSingularity - Base URI: https://qa.visionwaves.com
+16:35:50.409 [main] INFO  utilities.TokenManager - Requesting token for env 'QA' from https://qa.visionwaves.com/auth/realms/BNTV/protocol/openid-connect/token
+16:35:50.410 [main] INFO  utilities.TokenManager - --------------------- Requesting for token -------------------------------------
+16:35:50.960 [main] INFO  utilities.TokenManager - Response of token API: {"error":"invalid_grant","error_description":"Invalid user credentials"}
+16:35:50.960 [main] ERROR utilities.TokenManager - QA token login failed for user 'lokesh.patidar@visionwaves.com'. Use SIT/Demo users provisioned on QA BNTV realm.
+16:35:50.960 [main] WARN  base.BaseTestDemoNetSingularity - Primary token fetch failed. Trying fallback...
+16:35:51.157 [main] ERROR base.BaseTestDemoNetSingularity - Fallback token request failed: 401 - HTTP/1.1 401 Unauthorized
+WARNING: sun.reflect.Reflection.getCallerClass is not supported. This will impact performance.
+16:35:51.157 [main] ERROR base.BaseTestDemoNetSingularity - Token initialization failed: Token is NULL. Authentication failed!
+java.lang.RuntimeException: Token is NULL. Authentication failed!
+	at base.BaseTestDemoNetSingularity.setUp(BaseTestDemoNetSingularity.java:159) ~[RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at financeSuite.FinanceAllAPI.setUp(FinanceAllAPI.java:168) ~[RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71) ~[RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400) ~[RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333) ~[RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188) ~[RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128) ~[RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:739) [RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at org.testng.TestRunner.run(TestRunner.java:614) [RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at org.testng.TestNG.run(TestNG.java:1079) [RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+	at base.TestRunner.main(TestRunner.java:99) [RestAssuredAutomationSuits-0.0.1-SNAPSHOT.jar:?]
+16:35:51.168 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+16:35:51.168 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: searchCompany
+16:35:51.168 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+SKIPPED: FinanceAllAPI.searchCompany
+Reason: java.lang.RuntimeException: Token is NULL. Authentication failed!
+java.lang.RuntimeException: java.lang.RuntimeException: Token is NULL. Authentication failed!
+	at base.BaseTestDemoNetSingularity.setUp(BaseTestDemoNetSingularity.java:167)
+	at financeSuite.FinanceAllAPI.setUp(FinanceAllAPI.java:168)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+Caused by: java.lang.RuntimeException: Token is NULL. Authentication failed!
+	at base.BaseTestDemoNetSingularity.setUp(BaseTestDemoNetSingularity.java:159)
+	... 23 more
+16:35:51.178 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+16:35:51.178 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: companyCount
+16:35:51.178 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+SKIPPED: FinanceAllAPI.companyCount
+Reason: java.lang.RuntimeException: Token is NULL. Authentication failed!
+java.lang.RuntimeException: java.lang.RuntimeException: Token is NULL. Authentication failed!
+	at base.BaseTestDemoNetSingularity.setUp(BaseTestDemoNetSingularity.java:167)
+	at financeSuite.FinanceAllAPI.setUp(FinanceAllAPI.java:168)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+Caused by: java.lang.RuntimeException: Token is NULL. Authentication failed!
+	at base.BaseTestDemoNetSingularity.setUp(BaseTestDemoNetSingularity.java:159)
+	... 23 more
+16:35:51.181 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+16:35:51.181 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: searchCurrency
+16:35:51.181 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+SKIPPED: FinanceAllAPI.searchCurrency
+Reason: java.lang.RuntimeException: Token is NULL. Authentication failed!
+java.lang.RuntimeException: java.lang.RuntimeException: Token is NULL. Authentication failed!
+	at base.BaseTestDemoNetSingularity.setUp(BaseTestDemoNetSingularity.java:167)
+	at financeSuite.FinanceAllAPI.setUp(FinanceAllAPI.java:168)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+Caused by: java.lang.RuntimeException: Token is NULL. Authentication failed!
+	at base.BaseTestDemoNetSingularity.setUp(BaseTestDemoNetSingularity.java:159)
+	... 23 more
+SKIPPED: FinanceAllAPI.createCompany
+Reason: Method financeSuite.FinanceAllAPI.createCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchCurrency() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchCurrency() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createCompanyWithInvalidCompanyCode
+Reason: Method financeSuite.FinanceAllAPI.createCompanyWithInvalidCompanyCode() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchCurrency() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createCompanyWithInvalidCompanyCode() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchCurrency() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createCompanyWithMissingMandatoryFields
+Reason: Method financeSuite.FinanceAllAPI.createCompanyWithMissingMandatoryFields() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchCurrency() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createCompanyWithMissingMandatoryFields() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchCurrency() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createCompanyWithUnauthorizedUser
+Reason: Method financeSuite.FinanceAllAPI.createCompanyWithUnauthorizedUser() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchCurrency() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createCompanyWithUnauthorizedUser() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchCurrency() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+16:35:51.192 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+16:35:51.192 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: profitCenterCount
+16:35:51.192 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+SKIPPED: FinanceAllAPI.profitCenterCount
+Reason: java.lang.RuntimeException: Token is NULL. Authentication failed!
+java.lang.RuntimeException: java.lang.RuntimeException: Token is NULL. Authentication failed!
+	at base.BaseTestDemoNetSingularity.setUp(BaseTestDemoNetSingularity.java:167)
+	at financeSuite.FinanceAllAPI.setUp(FinanceAllAPI.java:168)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+Caused by: java.lang.RuntimeException: Token is NULL. Authentication failed!
+	at base.BaseTestDemoNetSingularity.setUp(BaseTestDemoNetSingularity.java:159)
+	... 23 more
+SKIPPED: FinanceAllAPI.verifyCompanySearchFindsCreatedCompany
+Reason: Method financeSuite.FinanceAllAPI.verifyCompanySearchFindsCreatedCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.verifyCompanySearchFindsCreatedCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.profitCenterSearch
+Reason: Method financeSuite.FinanceAllAPI.profitCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.profitCenterCount() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.profitCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.profitCenterCount() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createProfitCenter
+Reason: Method financeSuite.FinanceAllAPI.createProfitCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.profitCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createProfitCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.profitCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createProfitCenterWithInvalidCode
+Reason: Method financeSuite.FinanceAllAPI.createProfitCenterWithInvalidCode() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.profitCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createProfitCenterWithInvalidCode() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.profitCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createProfitCenterWithMissingMandatoryFields
+Reason: Method financeSuite.FinanceAllAPI.createProfitCenterWithMissingMandatoryFields() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.profitCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createProfitCenterWithMissingMandatoryFields() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.profitCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createProfitCenterWithUnauthorizedUser
+Reason: Method financeSuite.FinanceAllAPI.createProfitCenterWithUnauthorizedUser() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.profitCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createProfitCenterWithUnauthorizedUser() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.profitCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.updateProfitCenter
+Reason: Method financeSuite.FinanceAllAPI.updateProfitCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createProfitCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.updateProfitCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createProfitCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+16:35:51.203 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+16:35:51.203 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: costCenterCount
+16:35:51.203 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+SKIPPED: FinanceAllAPI.costCenterCount
+Reason: java.lang.RuntimeException: Token is NULL. Authentication failed!
+java.lang.RuntimeException: java.lang.RuntimeException: Token is NULL. Authentication failed!
+	at base.BaseTestDemoNetSingularity.setUp(BaseTestDemoNetSingularity.java:167)
+	at financeSuite.FinanceAllAPI.setUp(FinanceAllAPI.java:168)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+Caused by: java.lang.RuntimeException: Token is NULL. Authentication failed!
+	at base.BaseTestDemoNetSingularity.setUp(BaseTestDemoNetSingularity.java:159)
+	... 23 more
+SKIPPED: FinanceAllAPI.costCenterSearch
+Reason: Method financeSuite.FinanceAllAPI.costCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.costCenterCount() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.costCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.costCenterCount() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createCostCenter
+Reason: Method financeSuite.FinanceAllAPI.createCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.costCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.costCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createCostCenterWithInvalidCode
+Reason: Method financeSuite.FinanceAllAPI.createCostCenterWithInvalidCode() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.costCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createCostCenterWithInvalidCode() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.costCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createCostCenterWithMissingMandatoryFields
+Reason: Method financeSuite.FinanceAllAPI.createCostCenterWithMissingMandatoryFields() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.costCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createCostCenterWithMissingMandatoryFields() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.costCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createCostCenterWithUnauthorizedUser
+Reason: Method financeSuite.FinanceAllAPI.createCostCenterWithUnauthorizedUser() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.costCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createCostCenterWithUnauthorizedUser() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.costCenterSearch() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.updateCostCenter
+Reason: Method financeSuite.FinanceAllAPI.updateCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.updateCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.deactivateCostCenter
+Reason: Method financeSuite.FinanceAllAPI.deactivateCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.updateCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.deactivateCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.updateCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+16:35:51.214 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+16:35:51.215 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: glSearchCompany
+16:35:51.215 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+SKIPPED: FinanceAllAPI.glSearchCompany
+Reason: java.lang.RuntimeException: Token is NULL. Authentication failed!
+java.lang.RuntimeException: java.lang.RuntimeException: Token is NULL. Authentication failed!
+	at base.BaseTestDemoNetSingularity.setUp(BaseTestDemoNetSingularity.java:167)
+	at financeSuite.FinanceAllAPI.setUp(FinanceAllAPI.java:168)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+Caused by: java.lang.RuntimeException: Token is NULL. Authentication failed!
+	at base.BaseTestDemoNetSingularity.setUp(BaseTestDemoNetSingularity.java:159)
+	... 23 more
+SKIPPED: FinanceAllAPI.searchChartOfAccountsMaster
+Reason: Method financeSuite.FinanceAllAPI.searchChartOfAccountsMaster() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.glSearchCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.searchChartOfAccountsMaster() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.glSearchCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.chartOfAccountsCountV3
+Reason: Method financeSuite.FinanceAllAPI.chartOfAccountsCountV3() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.glSearchCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.chartOfAccountsCountV3() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.glSearchCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.chartOfAccountsSearchV3
+Reason: Method financeSuite.FinanceAllAPI.chartOfAccountsSearchV3() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.glSearchCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed
+financeSuite.FinanceAllAPI.chartOfAccountsCountV3() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.chartOfAccountsSearchV3() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.glSearchCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed
+financeSuite.FinanceAllAPI.chartOfAccountsCountV3() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createChartOfAccounts
+Reason: Method financeSuite.FinanceAllAPI.createChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsMaster() on instance financeSuite.FinanceAllAPI@5d2a4eed
+financeSuite.FinanceAllAPI.glSearchCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsMaster() on instance financeSuite.FinanceAllAPI@5d2a4eed
+financeSuite.FinanceAllAPI.glSearchCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createGlAccountWithInvalidData
+Reason: Method financeSuite.FinanceAllAPI.createGlAccountWithInvalidData() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsMaster() on instance financeSuite.FinanceAllAPI@5d2a4eed
+financeSuite.FinanceAllAPI.glSearchCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createGlAccountWithInvalidData() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsMaster() on instance financeSuite.FinanceAllAPI@5d2a4eed
+financeSuite.FinanceAllAPI.glSearchCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createGlAccountWithMissingMandatoryFields
+Reason: Method financeSuite.FinanceAllAPI.createGlAccountWithMissingMandatoryFields() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsMaster() on instance financeSuite.FinanceAllAPI@5d2a4eed
+financeSuite.FinanceAllAPI.glSearchCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createGlAccountWithMissingMandatoryFields() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsMaster() on instance financeSuite.FinanceAllAPI@5d2a4eed
+financeSuite.FinanceAllAPI.glSearchCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createGlAccountWithUnauthorizedUser
+Reason: Method financeSuite.FinanceAllAPI.createGlAccountWithUnauthorizedUser() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsMaster() on instance financeSuite.FinanceAllAPI@5d2a4eed
+financeSuite.FinanceAllAPI.glSearchCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createGlAccountWithUnauthorizedUser() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsMaster() on instance financeSuite.FinanceAllAPI@5d2a4eed
+financeSuite.FinanceAllAPI.glSearchCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.updateChartOfAccounts
+Reason: Method financeSuite.FinanceAllAPI.updateChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.updateChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.searchChartOfAccountsForApproval
+Reason: Method financeSuite.FinanceAllAPI.searchChartOfAccountsForApproval() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.updateChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.searchChartOfAccountsForApproval() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.updateChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.reviewChartOfAccounts
+Reason: Method financeSuite.FinanceAllAPI.reviewChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsForApproval() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.reviewChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsForApproval() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.updateWorkflowActionChartOfAccounts
+Reason: Method financeSuite.FinanceAllAPI.updateWorkflowActionChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.reviewChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.updateWorkflowActionChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.reviewChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.chartOfAccountsSearchBeforeBalanceCheck
+Reason: Method financeSuite.FinanceAllAPI.chartOfAccountsSearchBeforeBalanceCheck() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.updateWorkflowActionChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.chartOfAccountsSearchBeforeBalanceCheck() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.updateWorkflowActionChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.checkChartOfAccountsBalance
+Reason: Method financeSuite.FinanceAllAPI.checkChartOfAccountsBalance() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.chartOfAccountsSearchBeforeBalanceCheck() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.checkChartOfAccountsBalance() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.chartOfAccountsSearchBeforeBalanceCheck() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.setAccountStatus
+Reason: Method financeSuite.FinanceAllAPI.setAccountStatus() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.checkChartOfAccountsBalance() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.setAccountStatus() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.checkChartOfAccountsBalance() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.reviewChartOfAccountsForDeactivate
+Reason: Method financeSuite.FinanceAllAPI.reviewChartOfAccountsForDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.setAccountStatus() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.reviewChartOfAccountsForDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.setAccountStatus() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.searchChartOfAccountsForDeactivate
+Reason: Method financeSuite.FinanceAllAPI.searchChartOfAccountsForDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.reviewChartOfAccountsForDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.searchChartOfAccountsForDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.reviewChartOfAccountsForDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.updateWorkflowActionDeactivate
+Reason: Method financeSuite.FinanceAllAPI.updateWorkflowActionDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsForDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.updateWorkflowActionDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsForDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.searchChartOfAccountsForReactivate
+Reason: Method financeSuite.FinanceAllAPI.searchChartOfAccountsForReactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.updateWorkflowActionDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.searchChartOfAccountsForReactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.updateWorkflowActionDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.updateWorkflowActionReactivate
+Reason: Method financeSuite.FinanceAllAPI.updateWorkflowActionReactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsForReactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.updateWorkflowActionReactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsForReactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+16:35:51.237 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+16:35:51.237 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: journalEntryCount
+16:35:51.238 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+SKIPPED: FinanceAllAPI.journalEntryCount
+Reason: java.lang.RuntimeException: Token is NULL. Authentication failed!
+java.lang.RuntimeException: java.lang.RuntimeException: Token is NULL. Authentication failed!
+	at base.BaseTestDemoNetSingularity.setUp(BaseTestDemoNetSingularity.java:167)
+	at financeSuite.FinanceAllAPI.setUp(FinanceAllAPI.java:168)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+	at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+Caused by: java.lang.RuntimeException: Token is NULL. Authentication failed!
+	at base.BaseTestDemoNetSingularity.setUp(BaseTestDemoNetSingularity.java:159)
+	... 23 more
+SKIPPED: FinanceAllAPI.journalEntrySearch
+Reason: Method financeSuite.FinanceAllAPI.journalEntrySearch() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.journalEntryCount() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.journalEntrySearch() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.journalEntryCount() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.generateJeNumber
+Reason: Method financeSuite.FinanceAllAPI.generateJeNumber() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.journalEntrySearch() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.generateJeNumber() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.journalEntrySearch() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createJournalEntry
+Reason: Method financeSuite.FinanceAllAPI.createJournalEntry() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.generateJeNumber() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createJournalEntry() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.generateJeNumber() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createJournalEntryWithInvalidData
+Reason: Method financeSuite.FinanceAllAPI.createJournalEntryWithInvalidData() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.generateJeNumber() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createJournalEntryWithInvalidData() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.generateJeNumber() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createJournalEntryWithMissingMandatoryFields
+Reason: Method financeSuite.FinanceAllAPI.createJournalEntryWithMissingMandatoryFields() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.generateJeNumber() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createJournalEntryWithMissingMandatoryFields() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.generateJeNumber() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.createJournalEntryWithUnauthorizedUser
+Reason: Method financeSuite.FinanceAllAPI.createJournalEntryWithUnauthorizedUser() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.generateJeNumber() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.createJournalEntryWithUnauthorizedUser() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.generateJeNumber() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.approvalBySeniorAccountant
+Reason: Method financeSuite.FinanceAllAPI.approvalBySeniorAccountant() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createJournalEntry() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.approvalBySeniorAccountant() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createJournalEntry() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.approvalByFinanceController
+Reason: Method financeSuite.FinanceAllAPI.approvalByFinanceController() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.approvalBySeniorAccountant() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.approvalByFinanceController() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.approvalBySeniorAccountant() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.approvalByGroupAccountingManager
+Reason: Method financeSuite.FinanceAllAPI.approvalByGroupAccountingManager() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.approvalByFinanceController() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.approvalByGroupAccountingManager() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.approvalByFinanceController() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.verifyJePostedStatus
+Reason: Method financeSuite.FinanceAllAPI.verifyJePostedStatus() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.approvalByGroupAccountingManager() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.verifyJePostedStatus() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.approvalByGroupAccountingManager() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.duplicateCompanyName
+Reason: Method financeSuite.FinanceAllAPI.duplicateCompanyName() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.duplicateCompanyName() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.duplicateCompanyCode
+Reason: Method financeSuite.FinanceAllAPI.duplicateCompanyCode() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.duplicateCompanyCode() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createCompany() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.duplicateProfitCenterName
+Reason: Method financeSuite.FinanceAllAPI.duplicateProfitCenterName() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createProfitCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.duplicateProfitCenterName() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createProfitCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.duplicateProfitCenterCode
+Reason: Method financeSuite.FinanceAllAPI.duplicateProfitCenterCode() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createProfitCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.duplicateProfitCenterCode() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createProfitCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.duplicateCostCenterName
+Reason: Method financeSuite.FinanceAllAPI.duplicateCostCenterName() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.duplicateCostCenterName() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.duplicateCostCenterCode
+Reason: Method financeSuite.FinanceAllAPI.duplicateCostCenterCode() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.duplicateCostCenterCode() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.duplicateGlAccountName
+Reason: Method financeSuite.FinanceAllAPI.duplicateGlAccountName() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.duplicateGlAccountName() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+
+===============================================
+FinanceAll-Suite
+Total tests run: 61, Passes: 0, Failures: 0, Skips: 61
+Configuration Failures: 1, Skips: 0
+===============================================
+
+16:35:51 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@307cf964: 21 ms
+16:35:51 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@1fe8f5e8: 10 ms
+16:35:51 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@149aa7b2: 20 ms
+16:35:51 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@3ca3648: 0 ms

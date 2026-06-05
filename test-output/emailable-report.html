@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">FinanceCreditMemoAPI</th></tr>
+<tr><td><a href="#t0">FinanceCreditMemoAPI-Test</a></td><td class="num">0</td><td class="num attn">14</td><td class="num">0</td><td class="num">0</td><td class="num">1,139</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">FinanceCreditMemoAPI</th></tr></tbody><tbody id="t0"><tr><th colspan="4">FinanceCreditMemoAPI-Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="14">financeSuite.FinanceCreditMemoAPI</td><td><a href="#m0">approvalWorkflow_L1_and_L2_forAmount15k</a></td><td rowspan="1">1780648796693</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m1">approvalWorkflow_L1_and_L2_forAmount50k</a></td><td rowspan="1">1780648796695</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m2">approvalWorkflow_L1_and_L3_above1Lakh</a></td><td rowspan="1">1780648796694</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m3">approvalWorkflow_L1_and_L3_forAmount150k</a></td><td rowspan="1">1780648796697</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m4">approveCreditMemoByFinanceController</a></td><td rowspan="1">1780648796688</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">approveCreditMemoByGroupAccountingManager</a></td><td rowspan="1">1780648796687</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m6">approveCreditMemoBySeniorGroupAccountingManager</a></td><td rowspan="1">1780648796690</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m7">createCreditMemo</a></td><td rowspan="1">1780648796684</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m8">creditMemoCount</a></td><td rowspan="1">1780648796646</td><td rowspan="1">12</td></tr><tr class="skippedeven"><td><a href="#m9">creditMemoSearch</a></td><td rowspan="1">1780648796681</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m10">searchEligibleApInvoice</a></td><td rowspan="1">1780648796683</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m11">submitCreditMemoForReview</a></td><td rowspan="1">1780648796686</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m12">verifyCreditMemoFinalState</a></td><td rowspan="1">1780648796691</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m13">verifyNoApprovalRequiredWhenAmountBelow10k</a></td><td rowspan="1">1780648796692</td><td rowspan="1">0</td></tr></tbody>
+</table>
+<h2>FinanceCreditMemoAPI-Test</h2><h3 id="m0">financeSuite.FinanceCreditMemoAPI#approvalWorkflow_L1_and_L2_forAmount15k</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Credit Memo creator token (Senior Accountant - Khushbu) is unavailable. Check unHumainosSeniorAccountant in config.properties for env=humainDemo.
+	at financeSuite.FinanceCreditMemoAPI.assertCreatorToken(FinanceCreditMemoAPI.java:291)
+	at financeSuite.FinanceCreditMemoAPI.runApprovalWorkflow(FinanceCreditMemoAPI.java:814)
+	at financeSuite.FinanceCreditMemoAPI.approvalWorkflow_L1_and_L2_forAmount15k(FinanceCreditMemoAPI.java:1171)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at base.TestRunner.main(TestRunner.java:93)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">financeSuite.FinanceCreditMemoAPI#approvalWorkflow_L1_and_L2_forAmount50k</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Credit Memo creator token (Senior Accountant - Khushbu) is unavailable. Check unHumainosSeniorAccountant in config.properties for env=humainDemo.
+	at financeSuite.FinanceCreditMemoAPI.assertCreatorToken(FinanceCreditMemoAPI.java:291)
+	at financeSuite.FinanceCreditMemoAPI.runApprovalWorkflow(FinanceCreditMemoAPI.java:814)
+	at financeSuite.FinanceCreditMemoAPI.approvalWorkflow_L1_and_L2_forAmount50k(FinanceCreditMemoAPI.java:1183)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at base.TestRunner.main(TestRunner.java:93)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">financeSuite.FinanceCreditMemoAPI#approvalWorkflow_L1_and_L3_above1Lakh</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Credit Memo creator token (Senior Accountant - Khushbu) is unavailable. Check unHumainosSeniorAccountant in config.properties for env=humainDemo.
+	at financeSuite.FinanceCreditMemoAPI.assertCreatorToken(FinanceCreditMemoAPI.java:291)
+	at financeSuite.FinanceCreditMemoAPI.runApprovalWorkflow(FinanceCreditMemoAPI.java:814)
+	at financeSuite.FinanceCreditMemoAPI.approvalWorkflow_L1_and_L3_above1Lakh(FinanceCreditMemoAPI.java:1177)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at base.TestRunner.main(TestRunner.java:93)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">financeSuite.FinanceCreditMemoAPI#approvalWorkflow_L1_and_L3_forAmount150k</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Credit Memo creator token (Senior Accountant - Khushbu) is unavailable. Check unHumainosSeniorAccountant in config.properties for env=humainDemo.
+	at financeSuite.FinanceCreditMemoAPI.assertCreatorToken(FinanceCreditMemoAPI.java:291)
+	at financeSuite.FinanceCreditMemoAPI.runApprovalWorkflow(FinanceCreditMemoAPI.java:814)
+	at financeSuite.FinanceCreditMemoAPI.approvalWorkflow_L1_and_L3_forAmount150k(FinanceCreditMemoAPI.java:1189)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at base.TestRunner.main(TestRunner.java:93)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">financeSuite.FinanceCreditMemoAPI#approveCreditMemoByFinanceController</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoByFinanceController() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at base.TestRunner.main(TestRunner.java:93)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">financeSuite.FinanceCreditMemoAPI#approveCreditMemoByGroupAccountingManager</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.submitCreditMemoForReview() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at base.TestRunner.main(TestRunner.java:93)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">financeSuite.FinanceCreditMemoAPI#approveCreditMemoBySeniorGroupAccountingManager</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoBySeniorGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.approveCreditMemoByFinanceController() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at base.TestRunner.main(TestRunner.java:93)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">financeSuite.FinanceCreditMemoAPI#createCreditMemo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.createCreditMemo() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.searchEligibleApInvoice() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at base.TestRunner.main(TestRunner.java:93)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">financeSuite.FinanceCreditMemoAPI#creditMemoCount</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: Credit Memo creator token (Senior Accountant - Khushbu) is unavailable. Check unHumainosSeniorAccountant in config.properties for env=humainDemo.
+	at financeSuite.FinanceCreditMemoAPI.assertCreatorToken(FinanceCreditMemoAPI.java:291)
+	at financeSuite.FinanceCreditMemoAPI.creditMemoCount(FinanceCreditMemoAPI.java:855)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at base.TestRunner.main(TestRunner.java:93)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">financeSuite.FinanceCreditMemoAPI#creditMemoSearch</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.creditMemoSearch() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.creditMemoCount() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at base.TestRunner.main(TestRunner.java:93)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">financeSuite.FinanceCreditMemoAPI#searchEligibleApInvoice</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.searchEligibleApInvoice() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.creditMemoSearch() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at base.TestRunner.main(TestRunner.java:93)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">financeSuite.FinanceCreditMemoAPI#submitCreditMemoForReview</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.submitCreditMemoForReview() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.createCreditMemo() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at base.TestRunner.main(TestRunner.java:93)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">financeSuite.FinanceCreditMemoAPI#verifyCreditMemoFinalState</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.SkipException: verifyCreditMemoFinalState: no created credit memo
+	at financeSuite.FinanceCreditMemoAPI.verifyCreditMemoFinalState(FinanceCreditMemoAPI.java:1198)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at base.TestRunner.main(TestRunner.java:93)
+... Removed 22 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">financeSuite.FinanceCreditMemoAPI#verifyNoApprovalRequiredWhenAmountBelow10k</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.verifyNoApprovalRequiredWhenAmountBelow10k() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.createCreditMemo() on instance financeSuite.FinanceCreditMemoAPI@44f3fe83]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at base.TestRunner.main(TestRunner.java:93)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

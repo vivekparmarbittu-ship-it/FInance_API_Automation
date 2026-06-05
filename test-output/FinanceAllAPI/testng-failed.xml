@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FinanceAllAPI]" guice-stage="DEVELOPMENT" verbose="2">
+  <test thread-count="5" name="FinanceAllAPI-Test(failed)" verbose="2">
+    <groups>
+      <run>
+        <include name="Sanity"/>
+        <include name="CRUDSanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="financeSuite.FinanceAllAPI">
+        <methods>
+          <include name="createProfitCenterWithUnauthorizedUser"/>
+          <include name="createCostCenterWithUnauthorizedUser"/>
+          <include name="createJournalEntryWithUnauthorizedUser"/>
+          <include name="profitCenterCount"/>
+          <include name="createGlAccountWithUnauthorizedUser"/>
+          <include name="costCenterSearch"/>
+          <include name="setUp"/>
+          <include name="glSearchCompany"/>
+          <include name="searchChartOfAccountsMaster"/>
+          <include name="profitCenterSearch"/>
+          <include name="journalEntrySearch"/>
+          <include name="journalEntryCount"/>
+          <include name="searchCurrency"/>
+          <include name="createCompanyWithUnauthorizedUser"/>
+          <include name="costCenterCount"/>
+          <include name="generateJeNumber"/>
+        </methods>
+      </class> <!-- financeSuite.FinanceAllAPI -->
+    </classes>
+  </test> <!-- FinanceAllAPI-Test(failed) -->
+</suite> <!-- Failed suite [FinanceAllAPI] -->

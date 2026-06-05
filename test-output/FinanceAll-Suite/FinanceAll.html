@@ -1,0 +1,335 @@
+<html>
+<head>
+<title>TestNG:  FinanceAll</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>FinanceAll</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>51/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 23 20:21:12 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>92 seconds (92230 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td>CRUDSanity Sanity </td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.searchCurrency()'><b>searchCurrency</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search currency records</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.profitCenterSearch()'><b>profitCenterSearch</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search profit center records</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.updateCostCenter()'><b>updateCostCenter</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Update cost center</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.deactivateCostCenter()'><b>deactivateCostCenter</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Deactivate cost center</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.setAccountStatus()'><b>setAccountStatus</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Set chart of accounts status</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createCompany()'><b>createCompany</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create company with valid payload</td>
+<td></td>
+<td>2</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createProfitCenter()'><b>createProfitCenter</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create profit center</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.chartOfAccountsSearchBeforeBalanceCheck()'><b>chartOfAccountsSearchBeforeBalanceCheck</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search chart of accounts before balance check</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.verifyJePostedStatus()'><b>verifyJePostedStatus</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Verify journal entry posted status</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createChartOfAccounts()'><b>createChartOfAccounts</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create chart of accounts</td>
+<td></td>
+<td>5</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.approvalByFinanceController()'><b>approvalByFinanceController</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Approve by finance controller</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createCostCenter()'><b>createCostCenter</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create cost center</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.journalEntryCount()'><b>journalEntryCount</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Get journal entry count</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.searchLanguage()'><b>searchLanguage</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search language records</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.profitCenterCount()'><b>profitCenterCount</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Get profit center count</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.checkChartOfAccountsBalance()'><b>checkChartOfAccountsBalance</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Check chart of accounts balance</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.searchChartOfAccountsForReactivate()'><b>searchChartOfAccountsForReactivate</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search chart of accounts for reactivate</td>
+<td></td>
+<td>8</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.searchCompany()'><b>searchCompany</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search company records</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.generateJeNumber()'><b>generateJeNumber</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Generate journal entry number</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.journalEntrySearch()'><b>journalEntrySearch</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search journal entries</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.duplicateCostCenterName()'><b>duplicateCostCenterName</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Validate duplicate cost center name handling</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.updateWorkflowActionDeactivate()'><b>updateWorkflowActionDeactivate</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Update workflow action for deactivate</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.duplicateGlAccountName()'><b>duplicateGlAccountName</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Validate duplicate GL account name handling</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createCompanyWithMissingMandatoryFields()'><b>createCompanyWithMissingMandatoryFields</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create company with missing mandatory fields</td>
+<td></td>
+<td>2</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.approvalBySeniorAccountant()'><b>approvalBySeniorAccountant</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Approve by senior accountant</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.updateProfitCenter()'><b>updateProfitCenter</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Update profit center</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.reviewChartOfAccountsForDeactivate()'><b>reviewChartOfAccountsForDeactivate</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Review chart of accounts for deactivate</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.chartOfAccountsCountV3()'><b>chartOfAccountsCountV3</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Get chart of accounts count v3</td>
+<td></td>
+<td>5</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.approvalByGroupAccountingManager()'><b>approvalByGroupAccountingManager</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Approve by group accounting manager</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.duplicateCompanyName()'><b>duplicateCompanyName</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Validate duplicate company name handling</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.costCenterSearch()'><b>costCenterSearch</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search cost center records</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createJournalEntry()'><b>createJournalEntry</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create journal entry</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.verifyCompanySearchFindsCreatedCompany()'><b>verifyCompanySearchFindsCreatedCompany</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Verify created company appears in search</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.createCompanyWithInvalidCompanyCode()'><b>createCompanyWithInvalidCompanyCode</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Create company with invalid company code</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.duplicateProfitCenterName()'><b>duplicateProfitCenterName</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Validate duplicate profit center name handling</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.costCenterCount()'><b>costCenterCount</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Get cost center count</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.searchChartOfAccountsMaster()'><b>searchChartOfAccountsMaster</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search chart of accounts master</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.searchLocationMaster()'><b>searchLocationMaster</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search location master records</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.searchChartOfAccountsForDeactivate()'><b>searchChartOfAccountsForDeactivate</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search chart of accounts for deactivate</td>
+<td></td>
+<td>14</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.updateChartOfAccounts()'><b>updateChartOfAccounts</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Update chart of accounts</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.duplicateProfitCenterCode()'><b>duplicateProfitCenterCode</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Validate duplicate profit center code handling</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.reviewChartOfAccounts()'><b>reviewChartOfAccounts</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Review chart of accounts</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.searchCountryIsoCode()'><b>searchCountryIsoCode</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search country by ISO code</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.updateWorkflowActionReactivate()'><b>updateWorkflowActionReactivate</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Update workflow action for reactivate</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.glSearchCompany()'><b>glSearchCompany</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search GL company</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.duplicateCompanyCode()'><b>duplicateCompanyCode</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Validate duplicate company code handling</td>
+<td></td>
+<td>7</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.companyCount()'><b>companyCount</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Get company count</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.searchChartOfAccountsForApproval()'><b>searchChartOfAccountsForApproval</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search chart of accounts for approval</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.duplicateCostCenterCode()'><b>duplicateCostCenterCode</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Validate duplicate cost center code handling</td>
+<td></td>
+<td>0</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.updateWorkflowActionChartOfAccounts()'><b>updateWorkflowActionChartOfAccounts</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Update workflow action for chart of accounts</td>
+<td></td>
+<td>1</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+<tr>
+<td title='financeSuite.FinanceAllAPI.chartOfAccountsSearchV3()'><b>chartOfAccountsSearchV3</b><br>Test class: financeSuite.FinanceAllAPI<br>Test method: Search chart of accounts v3</td>
+<td></td>
+<td>2</td>
+<td>financeSuite.FinanceAllAPI@62ea3440</td></tr>
+</table><p>
+</body>
+</html>

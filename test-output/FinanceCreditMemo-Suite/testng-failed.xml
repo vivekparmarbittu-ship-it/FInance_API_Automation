@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FinanceCreditMemo-Suite]" guice-stage="DEVELOPMENT" verbose="2">
+  <test thread-count="5" name="FinanceCreditMemo(failed)" verbose="2">
+    <classes>
+      <class name="financeSuite.FinanceCreditMemoAPI">
+        <methods>
+          <include name="setUp"/>
+          <include name="creditMemoCount"/>
+          <include name="beforeMethod"/>
+          <include name="createCreditMemo"/>
+          <include name="approveCreditMemoBySeniorGroupAccountingManager"/>
+          <include name="approveCreditMemoByGroupAccountingManager"/>
+          <include name="searchEligibleApInvoice"/>
+          <include name="creditMemoSearch"/>
+          <include name="submitCreditMemoForReview"/>
+          <include name="approveCreditMemoByFinanceController"/>
+        </methods>
+      </class> <!-- financeSuite.FinanceCreditMemoAPI -->
+    </classes>
+  </test> <!-- FinanceCreditMemo(failed) -->
+</suite> <!-- Failed suite [FinanceCreditMemo-Suite] -->

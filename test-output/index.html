@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-skipped">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods,  3 skipped,  11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Default_suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="financeSuite.FinanceDebitMemoAPI" class="method navigator-link" hash-for-method="approveDebitMemoByFinanceController">approveDebitMemoByFinanceController</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="financeSuite.FinanceDebitMemoAPI" class="method navigator-link" hash-for-method="approveDebitMemoByGroupAccountingManager">approveDebitMemoByGroupAccountingManager</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="financeSuite.FinanceDebitMemoAPI" class="method navigator-link" hash-for-method="approveDebitMemoBySeniorGroupAccountingManager">approveDebitMemoBySeniorGroupAccountingManager</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="financeSuite.FinanceDebitMemoAPI" class="method navigator-link" hash-for-method="approvalWorkflow_L1_and_L2_forAmount15k">approvalWorkflow_L1_and_L2_forAmount15k</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="financeSuite.FinanceDebitMemoAPI" class="method navigator-link" hash-for-method="approvalWorkflow_L1_and_L2_forAmount50k">approvalWorkflow_L1_and_L2_forAmount50k</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="financeSuite.FinanceDebitMemoAPI" class="method navigator-link" hash-for-method="approvalWorkflow_L1_and_L3_above1Lakh">approvalWorkflow_L1_and_L3_above1Lakh</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="financeSuite.FinanceDebitMemoAPI" class="method navigator-link" hash-for-method="approvalWorkflow_L1_and_L3_forAmount150k">approvalWorkflow_L1_and_L3_forAmount150k</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="financeSuite.FinanceDebitMemoAPI" class="method navigator-link" hash-for-method="createDebitMemo">createDebitMemo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="financeSuite.FinanceDebitMemoAPI" class="method navigator-link" hash-for-method="debitMemoCount">debitMemoCount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="financeSuite.FinanceDebitMemoAPI" class="method navigator-link" hash-for-method="debitMemoSearch">debitMemoSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="financeSuite.FinanceDebitMemoAPI" class="method navigator-link" hash-for-method="searchEligibleApInvoice">searchEligibleApInvoice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="financeSuite.FinanceDebitMemoAPI" class="method navigator-link" hash-for-method="submitDebitMemoForReview">submitDebitMemoForReview</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="financeSuite.FinanceDebitMemoAPI" class="method navigator-link" hash-for-method="verifyDebitMemoFinalState">verifyDebitMemoFinalState</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="financeSuite.FinanceDebitMemoAPI" class="method navigator-link" hash-for-method="verifyNoApprovalRequiredWhenAmountBelow10k">verifyNoApprovalRequiredWhenAmountBelow10k</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">financeSuite.FinanceDebitMemoAPI</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="approveDebitMemoByFinanceController">
+                  </a> <!-- approveDebitMemoByFinanceController -->
+                  <span class="method-name">approveDebitMemoByFinanceController</span>
+                  <div class="stack-trace">java.lang.Throwable: Method financeSuite.FinanceDebitMemoAPI.approveDebitMemoByFinanceController() on instance financeSuite.FinanceDebitMemoAPI@1d9bec4d depends on not successfully finished methods 
+[financeSuite.FinanceDebitMemoAPI.approveDebitMemoByGroupAccountingManager() on instance financeSuite.FinanceDebitMemoAPI@1d9bec4d]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Level-2 approval by Finance Controller (Abinaya) - required for amount > 10k (up to 1L))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="approveDebitMemoByGroupAccountingManager">
+                  </a> <!-- approveDebitMemoByGroupAccountingManager -->
+                  <span class="method-name">approveDebitMemoByGroupAccountingManager</span>
+                  <div class="stack-trace">org.testng.SkipException: approveDebitMemoByGroupAccountingManager: amount 1000.0 not above tier minimum (10000.0). Group Accounting Manager - Rohini (L1) approval not required.
+	at financeSuite.FinanceDebitMemoAPI.approveDebitMemoAs(FinanceDebitMemoAPI.java:780)
+	at financeSuite.FinanceDebitMemoAPI.approveDebitMemoByGroupAccountingManager(FinanceDebitMemoAPI.java:1085)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Level-1 approval by Group Accounting Manager (Rohini) - required for amount > 10k)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="approveDebitMemoBySeniorGroupAccountingManager">
+                  </a> <!-- approveDebitMemoBySeniorGroupAccountingManager -->
+                  <span class="method-name">approveDebitMemoBySeniorGroupAccountingManager</span>
+                  <div class="stack-trace">java.lang.Throwable: Method financeSuite.FinanceDebitMemoAPI.approveDebitMemoBySeniorGroupAccountingManager() on instance financeSuite.FinanceDebitMemoAPI@1d9bec4d depends on not successfully finished methods 
+[financeSuite.FinanceDebitMemoAPI.approveDebitMemoByFinanceController() on instance financeSuite.FinanceDebitMemoAPI@1d9bec4d]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Level-3 approval by Senior Group Accounting Manager (Suyash) - required for amount > 1 lakh)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-skipped -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">financeSuite.FinanceDebitMemoAPI</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="approvalWorkflow_L1_and_L2_forAmount15k">
+                  </a> <!-- approvalWorkflow_L1_and_L2_forAmount15k -->
+                  <span class="method-name">approvalWorkflow_L1_and_L2_forAmount15k</span>
+                  <em>
+(Approval workflow L1+L2: amount 15k (>10k, <=1L) - GAM then FC)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="approvalWorkflow_L1_and_L2_forAmount50k">
+                  </a> <!-- approvalWorkflow_L1_and_L2_forAmount50k -->
+                  <span class="method-name">approvalWorkflow_L1_and_L2_forAmount50k</span>
+                  <em>
+(Approval workflow L1+L2: amount 50k (10k-1L band) - GAM then FC)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="approvalWorkflow_L1_and_L3_above1Lakh">
+                  </a> <!-- approvalWorkflow_L1_and_L3_above1Lakh -->
+                  <span class="method-name">approvalWorkflow_L1_and_L3_above1Lakh</span>
+                  <em>
+(Approval workflow L1+L3: amount 101k (>1L) - GAM then SGAM (FC not in 10k-1L band))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="approvalWorkflow_L1_and_L3_forAmount150k">
+                  </a> <!-- approvalWorkflow_L1_and_L3_forAmount150k -->
+                  <span class="method-name">approvalWorkflow_L1_and_L3_forAmount150k</span>
+                  <em>
+(Approval workflow L1+L3: amount 150k (>1L) - GAM then SGAM (FC not in 10k-1L band))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createDebitMemo">
+                  </a> <!-- createDebitMemo -->
+                  <span class="method-name">createDebitMemo</span>
+                  <em>
+(Create Debit Memo (Accountant - Vivek))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="debitMemoCount">
+                  </a> <!-- debitMemoCount -->
+                  <span class="method-name">debitMemoCount</span>
+                  <em>
+(Get debit memo / invoice-adjustment count)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="debitMemoSearch">
+                  </a> <!-- debitMemoSearch -->
+                  <span class="method-name">debitMemoSearch</span>
+                  <em>
+(Search debit memos / invoice adjustments)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchEligibleApInvoice">
+                  </a> <!-- searchEligibleApInvoice -->
+                  <span class="method-name">searchEligibleApInvoice</span>
+                  <em>
+(Find an eligible (POSTED/PAID) AP invoice and capture id / glAccount / costCenter)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitDebitMemoForReview">
+                  </a> <!-- submitDebitMemoForReview -->
+                  <span class="method-name">submitDebitMemoForReview</span>
+                  <em>
+(Submit Debit Memo for review (status=PENDING_REVIEW))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDebitMemoFinalState">
+                  </a> <!-- verifyDebitMemoFinalState -->
+                  <span class="method-name">verifyDebitMemoFinalState</span>
+                  <em>
+(Re-search the Debit Memo and verify it transitioned out of DRAFT/PENDING_REVIEW)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNoApprovalRequiredWhenAmountBelow10k">
+                  </a> <!-- verifyNoApprovalRequiredWhenAmountBelow10k -->
+                  <span class="method-name">verifyNoApprovalRequiredWhenAmountBelow10k</span>
+                  <em>
+(Verify amount <= 10k does not require L1/L2/L3 approvers)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/private/var/folders/yn/7sht5m811w1d9qj1n7lf4x8c0000gn/T/testng-eclipse-1012954632/testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;financeSuite.FinanceDebitMemoAPI&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">DebitMemo</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">approvalWorkflow_L1_and_L2_forAmount15k</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">approvalWorkflow_L1_and_L2_forAmount50k</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">approvalWorkflow_L1_and_L3_above1Lakh</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">approvalWorkflow_L1_and_L3_forAmount150k</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">approveDebitMemoByFinanceController</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">approveDebitMemoByGroupAccountingManager</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">approveDebitMemoBySeniorGroupAccountingManager</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createDebitMemo</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">debitMemoCount</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">debitMemoSearch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchEligibleApInvoice</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">submitDebitMemoForReview</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyDebitMemoFinalState</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyNoApprovalRequiredWhenAmountBelow10k</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">DebitMemoApproval</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">approvalWorkflow_L1_and_L2_forAmount15k</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">approvalWorkflow_L1_and_L2_forAmount50k</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">approvalWorkflow_L1_and_L3_above1Lakh</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">approvalWorkflow_L1_and_L3_forAmount150k</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyNoApprovalRequiredWhenAmountBelow10k</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">approveDebitMemoByFinanceController</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">approveDebitMemoByGroupAccountingManager</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">approveDebitMemoBySeniorGroupAccountingManager</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">createDebitMemo</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">debitMemoCount</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">debitMemoSearch</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">searchEligibleApInvoice</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">submitDebitMemoForReview</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyDebitMemoFinalState</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verifyNoApprovalRequiredWhenAmountBelow10k</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'approvalWorkflow_L1_and_L2_forAmount15k')
+data.setCell(0, 2, 'financeSuite.FinanceDebitMemoAPI')
+data.setCell(0, 3, 12849);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'approvalWorkflow_L1_and_L3_forAmount150k')
+data.setCell(1, 2, 'financeSuite.FinanceDebitMemoAPI')
+data.setCell(1, 3, 12104);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'approvalWorkflow_L1_and_L3_above1Lakh')
+data.setCell(2, 2, 'financeSuite.FinanceDebitMemoAPI')
+data.setCell(2, 3, 12092);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'approvalWorkflow_L1_and_L2_forAmount50k')
+data.setCell(3, 2, 'financeSuite.FinanceDebitMemoAPI')
+data.setCell(3, 3, 11461);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'debitMemoSearch')
+data.setCell(4, 2, 'financeSuite.FinanceDebitMemoAPI')
+data.setCell(4, 3, 5122);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'createDebitMemo')
+data.setCell(5, 2, 'financeSuite.FinanceDebitMemoAPI')
+data.setCell(5, 3, 3509);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'searchEligibleApInvoice')
+data.setCell(6, 2, 'financeSuite.FinanceDebitMemoAPI')
+data.setCell(6, 3, 1505);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'submitDebitMemoForReview')
+data.setCell(7, 2, 'financeSuite.FinanceDebitMemoAPI')
+data.setCell(7, 3, 1244);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyDebitMemoFinalState')
+data.setCell(8, 2, 'financeSuite.FinanceDebitMemoAPI')
+data.setCell(8, 3, 808);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'debitMemoCount')
+data.setCell(9, 2, 'financeSuite.FinanceDebitMemoAPI')
+data.setCell(9, 3, 691);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'approveDebitMemoByGroupAccountingManager')
+data.setCell(10, 2, 'financeSuite.FinanceDebitMemoAPI')
+data.setCell(10, 3, 3);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyNoApprovalRequiredWhenAmountBelow10k')
+data.setCell(11, 2, 'financeSuite.FinanceDebitMemoAPI')
+data.setCell(11, 3, 1);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'approveDebitMemoByFinanceController')
+data.setCell(12, 2, 'financeSuite.FinanceDebitMemoAPI')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'approveDebitMemoBySeniorGroupAccountingManager')
+data.setCell(13, 2, 'financeSuite.FinanceDebitMemoAPI')
+data.setCell(13, 3, 0);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">financeSuite.FinanceDebitMemoAPI</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=FinanceDebitMemoAPI.debitMemoCount()[pri:1, instance:f...)</span>
+                <span class="method-start">7251 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">debitMemoCount</span>
+                <span class="method-start">7253 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=FinanceDebitMemoAPI.debitMemoSearch()[pri:2, instance:...)</span>
+                <span class="method-start">7951 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">debitMemoSearch</span>
+                <span class="method-start">7952 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=FinanceDebitMemoAPI.searchEligibleApInvoice()[pri:3, i...)</span>
+                <span class="method-start">13075 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">searchEligibleApInvoice</span>
+                <span class="method-start">13075 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=FinanceDebitMemoAPI.createDebitMemo()[pri:4, instance:...)</span>
+                <span class="method-start">14581 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">createDebitMemo</span>
+                <span class="method-start">14582 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=FinanceDebitMemoAPI.submitDebitMemoForReview()[pri:5, ...)</span>
+                <span class="method-start">18095 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">submitDebitMemoForReview</span>
+                <span class="method-start">18096 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=FinanceDebitMemoAPI.approveDebitMemoByGroupAccountingM...)</span>
+                <span class="method-start">19346 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">approveDebitMemoByGroupAccountingManager</span>
+                <span class="method-start">19348 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=FinanceDebitMemoAPI.verifyDebitMemoFinalState()[pri:9,...)</span>
+                <span class="method-start">19367 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDebitMemoFinalState</span>
+                <span class="method-start">19368 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=FinanceDebitMemoAPI.verifyNoApprovalRequiredWhenAmount...)</span>
+                <span class="method-start">20178 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNoApprovalRequiredWhenAmountBelow10k</span>
+                <span class="method-start">20178 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=FinanceDebitMemoAPI.approvalWorkflow_L1_and_L2_forAmou...)</span>
+                <span class="method-start">20181 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">approvalWorkflow_L1_and_L2_forAmount15k</span>
+                <span class="method-start">20181 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=FinanceDebitMemoAPI.approvalWorkflow_L1_and_L3_above1L...)</span>
+                <span class="method-start">33032 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">approvalWorkflow_L1_and_L3_above1Lakh</span>
+                <span class="method-start">33033 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=FinanceDebitMemoAPI.approvalWorkflow_L1_and_L2_forAmou...)</span>
+                <span class="method-start">45129 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">approvalWorkflow_L1_and_L2_forAmount50k</span>
+                <span class="method-start">45130 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod([TestResult name={null} status=CREATED method=FinanceDebitMemoAPI.approvalWorkflow_L1_and_L3_forAmou...)</span>
+                <span class="method-start">56596 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">approvalWorkflow_L1_and_L3_forAmount150k</span>
+                <span class="method-start">56597 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

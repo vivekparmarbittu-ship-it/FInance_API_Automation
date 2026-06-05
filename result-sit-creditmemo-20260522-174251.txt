@@ -1,0 +1,238 @@
+17:42:56.818 [main] INFO  base.TestRunner - ========= TestRunner Started =========
+17:42:56.819 [main] INFO  base.TestRunner - Loaded config.properties
+17:42:56.823 [main] INFO  base.TestRunner - Selected env = SIT
+17:42:56.823 [main] INFO  base.TestRunner - Selected module = creditmemo
+17:42:56.824 [main] INFO  base.TestRunner - Env config loaded: baseUri=https://one-sit.humain.ai, tokenPath=/auth/realms/BNTV/protocol/openid-connect/token, username present?=true
+17:42:56.912 [main] INFO  base.TestRunner - Extracted XML resource 'xml/FinanceCreditMemo.xml' to temp file: /var/folders/yn/7sht5m811w1d9qj1n7lf4x8c0000gn/T/testng-suites-12166829304451524874/FinanceCreditMemo.xml
+17:42:56.912 [main] INFO  base.TestRunner - Will run TestNG suite files: [/var/folders/yn/7sht5m811w1d9qj1n7lf4x8c0000gn/T/testng-suites-12166829304451524874/FinanceCreditMemo.xml]
+17:42:56 DEBUG org.testng.TestNG - suiteXmlPath: "/var/folders/yn/7sht5m811w1d9qj1n7lf4x8c0000gn/T/testng-suites-12166829304451524874/FinanceCreditMemo.xml"
+...
+... TestNG [WORKING] by Cédric Beust (cedric@beust.com)
+...
+
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 4 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 2 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 4 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+17:42:56 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /private/var/folders/yn/7sht5m811w1d9qj1n7lf4x8c0000gn/T/testng-suites-12166829304451524874/FinanceCreditMemo.xml
+
+17:42:57 INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 1 ms.
+17:42:57.080 [main] INFO  base.BaseTestDemoNetSingularity - ========= Base Setup Started =========
+17:42:57.080 [main] INFO  base.BaseTestDemoNetSingularity - Resolved environment: SIT
+17:42:57.080 [main] DEBUG base.BaseTestDemoNetSingularity - baseUri already present: https://one-sit.humain.ai
+17:42:57.280 [main] INFO  base.BaseTestDemoNetSingularity - Environment (effective): SIT
+17:42:57.280 [main] INFO  base.BaseTestDemoNetSingularity - Base URI: https://one-sit.humain.ai
+17:42:57.281 [main] INFO  utilities.TokenManager - Requesting token for env 'SIT' from https://one-sit.humain.ai/auth/realms/BNTV/protocol/openid-connect/token
+17:42:57.282 [main] INFO  utilities.TokenManager - --------------------- Requesting for token -------------------------------------
+17:42:59.183 [main] INFO  utilities.TokenManager - Response of token API: {"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJiX21peUs5dERpc0QtLWxTdGo0blg1QW1hb1gzRUhzcnZHeXNBOVRWRDhjIn0.eyJleHAiOjE3Nzk0NTU1NzgsImlhdCI6MTc3OTQ1MTk3OCwianRpIjoib25ydHJvOjdhNDA5YTZkLTYwNDEtMTcwMi0xNGIyLWE3ZjRlMGNmNDZhOCIsImlzcyI6Imh0dHBzOi8vb25lLXNpdC5odW1haW4uYWkvYXV0aC9yZWFsbXMvQk5UViIsInN1YiI6IjNmMWE4N2EyLWFmMDQtNDExNy1iYzg2LWFmNmFhMmJkNjEwOSIsInR5cCI6IkJlYXJlciIsImF6cCI6Imh1bWFpbm9zIiwic2lkIjoiV1VmTVRiLS1rUGNuTGc1S2V2bEF6RjBTIiwiYWxsb3dlZC1vcmlnaW5zIjpbImh0dHA6Ly9vbmUtc2l0Lmh1bWFpbi5haSIsImh0dHBzOi8vbG9jYWxob3N0IiwiaHR0cHM6Ly9vbmUtc2l0Lmh1bWFpbi5haSIsImh0dHA6Ly9sb2NhbGhvc3QiXSwic2NvcGUiOiJwcm9maWxlIGVtYWlsIiwiYWN0aXZlRGl2aXNpb24iOiIxIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImN1c3RvbWVyX3V1aWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAiLCJmdWxsTmFtZSI6Ikxva2VzaCBQYXRpZGFyIiwib3JnYW5pc2F0aW9uUm9sZSI6IkNvbmZpZ3VyYXRvciIsInByZWZlcnJlZF91c2VybmFtZSI6Imxva2VzaC5wYXRpZGFyQHZpc2lvbndhdmVzLmNvbSIsImxvY2FsZSI6ImVuIiwiZ2l2ZW5fbmFtZSI6Ikxva2VzaCIsImlzRmlyc3RUaW1lTG9naW4iOiJmYWxzZSIsInVzZXJJZCI6IjE0MjMyMSIsImN1c3RvbWVyTmFtZSI6Ikh1bWFpbm9zIiwibmFtZSI6Ikxva2VzaCBQYXRpZGFyIiwiY3VzdG9tZXJJZCI6IjEiLCJwcm9maWxlVGVtcGxhdGUiOiJ7XCIxXCI6W1wiRmluYW5jZSBjb25maWd1cmF0b3JcIixcIkh1bWFpbm9zIHBsYXRmb3JtIGNvbmZpZ3VyYXRvclwiLFwiUHJvY3VyZW1lbnQgTGVhZFwiXX0iLCJmYW1pbHlfbmFtZSI6IlBhdGlkYXIiLCJlbWFpbCI6Imxva2VzaC5wYXRpZGFyQHZpc2lvbndhdmVzLmNvbSJ9.aMRDv8DxH8JgHKuM9mO8op_PHYtyVBTukwXP04bSQW836-nw3IcFvdeDQywcm2MZ14U9f0R4-1SLt3xqR4OplQSea2Ztu7HqDOeyaw5rJcbK9c3WGkNvGpojG6tZty59yZPeTqZO9CMxYQW9_DIxMIcvhT5hDLp0zEW2msTBsuHWmLRkYbcLbsXrqhIk3velBGsE43mGixkFmGH5in6PFWb88eWFnFCzcJjigxBLpKP3mXmsZRIEgw73qc52-2MOTdo7Ov47dORfQHOSzz_inut7IG0kD6oeI6xxjTI68e1naAagVCNuhPjIT_l3SK6KJAByFiX3Gnj7CYvSTyQ26g","expires_in":3600,"refresh_expires_in":54000,"refresh_token":"eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI5MTE1MDUzMS01NjljLTQ5OWQtOGEyZC1iYTVjY2M5YmRkYmQifQ.eyJleHAiOjE3Nzk1MDU5NzgsImlhdCI6MTc3OTQ1MTk3OCwianRpIjoiNjI0YTU3NDQtYThlNi01YjZmLWZkYjEtNDc4ZGMxOWM0MDg0IiwiaXNzIjoiaHR0cHM6Ly9vbmUtc2l0Lmh1bWFpbi5haS9hdXRoL3JlYWxtcy9CTlRWIiwiYXVkIjoiaHR0cHM6Ly9vbmUtc2l0Lmh1bWFpbi5haS9hdXRoL3JlYWxtcy9CTlRWIiwic3ViIjoiM2YxYTg3YTItYWYwNC00MTE3LWJjODYtYWY2YWEyYmQ2MTA5IiwidHlwIjoiUmVmcmVzaCIsImF6cCI6Imh1bWFpbm9zIiwic2lkIjoiV1VmTVRiLS1rUGNuTGc1S2V2bEF6RjBTIiwic2NvcGUiOiJ3ZWItb3JpZ2lucyBwcm9maWxlIGVtYWlsIGJhc2ljIn0.V_1OiTHtmsyvjL6n_3JjnYGHdVLjMMasHjUWz4eK65wW_fZvNyNW36VzprGDib18WfxdQXqpilmK2FjlbM8DUQ","token_type":"Bearer","not-before-policy":1779296557,"session_state":"WUfMTb--kPcnLg5KevlAzF0S","scope":"profile email"}
+17:42:59.400 [main] INFO  utilities.TokenManager - Token for env 'SIT' cached. Expires in 3600 seconds
+17:42:59.400 [main] INFO  base.BaseTestDemoNetSingularity - Token initialized successfully (length=1694)
+17:43:03.862 [main] INFO  base.BaseTestDemoNetSingularity - Credit Memo Creator (Senior Accountant): userId=ea24846e-420a-42bb-ac52-304e53a53e6d, tokenLength=1388
+17:43:03.862 [main] INFO  base.BaseTestDemoNetSingularity - L1 Approver - Group Accounting Manager: userId=b1fff434-009b-434d-81bc-11eb9256ffb6, tokenLength=1417
+17:43:03.862 [main] INFO  base.BaseTestDemoNetSingularity - L2 Approver - Finance Controller: userId=4315deb5-1ea8-444a-83ec-ed7f9c13d701, tokenLength=1428
+17:43:03.862 [main] INFO  base.BaseTestDemoNetSingularity - L3 Approver - Senior Group Accounting Manager: userId=142f4df7-eee1-42da-92f5-b7353c0d1e75, tokenLength=1388
+17:43:03.862 [main] INFO  base.BaseTestDemoNetSingularity - Credit Memo amount: 150000.0
+17:43:03.862 [main] INFO  base.BaseTestDemoNetSingularity - Approval tiers: >10k=GAM (L1), 10k-1L=FC (L2), >1L=SGAM (L3)
+17:43:03.866 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+17:43:03.866 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: creditMemoCount
+17:43:03.866 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+17:43:04.393 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+17:43:04.393 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: creditMemoSearch
+17:43:04.393 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+17:43:09.854 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+17:43:09.855 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: searchEligibleApInvoice
+17:43:09.855 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+17:43:11.352 [main] INFO  base.BaseTestDemoNetSingularity - searchEligibleApInvoice -> apInvoice.id=1496, glAccount.id=483, costCenter.id=123337
+17:43:11.353 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+17:43:11.353 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createCreditMemo
+17:43:11.353 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+17:43:12.197 [main] INFO  base.BaseTestDemoNetSingularity - uploadVendorCreditNote status=200 body={"creatorId":143080,"creatorName":"Khushbu Patil","creationTime":1779451992216,"lastModifierId":143080,"lastModifierName":"Khushbu Patil","modificationTime":1779451992216,"id":24920,"filename":"vendor-credit-note-1779451991353.pdf","path":"uploads/documents/37347/vendor-credit-note-1779451991353.pdf","extension":"pdf","size":303,"latitude":null,"longitude":null,"azimuth":null,"captureTime":null,"r...
+17:43:13.040 [main] INFO  base.BaseTestDemoNetSingularity - createCreditMemo POST /apim/financial-accounting/1.0/rest/invoice-adjustment/create-credit-memo status=422 body={"message":"Vendor credit note document required. Upload vendor-issued credit memo.","dynamic":{}}
+FAILED: FinanceCreditMemoAPI.createCreditMemo
+Reason: The following asserts failed:
+	createCreditMemo: Expected one of [200, 201], got 422
+java.lang.AssertionError: The following asserts failed:
+	createCreditMemo: Expected one of [200, 201], got 422
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at financeSuite.FinanceCreditMemoAPI.createCreditMemo(FinanceCreditMemoAPI.java:546)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceCreditMemoAPI.submitCreditMemoForReview
+Reason: Method financeSuite.FinanceCreditMemoAPI.submitCreditMemoForReview() on instance financeSuite.FinanceCreditMemoAPI@4409e975 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.createCreditMemo() on instance financeSuite.FinanceCreditMemoAPI@4409e975]
+java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.submitCreditMemoForReview() on instance financeSuite.FinanceCreditMemoAPI@4409e975 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.createCreditMemo() on instance financeSuite.FinanceCreditMemoAPI@4409e975]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager
+Reason: Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@4409e975 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.submitCreditMemoForReview() on instance financeSuite.FinanceCreditMemoAPI@4409e975]
+java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@4409e975 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.submitCreditMemoForReview() on instance financeSuite.FinanceCreditMemoAPI@4409e975]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceCreditMemoAPI.approveCreditMemoByFinanceController
+Reason: Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoByFinanceController() on instance financeSuite.FinanceCreditMemoAPI@4409e975 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@4409e975]
+java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoByFinanceController() on instance financeSuite.FinanceCreditMemoAPI@4409e975 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.approveCreditMemoByGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@4409e975]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceCreditMemoAPI.approveCreditMemoBySeniorGroupAccountingManager
+Reason: Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoBySeniorGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@4409e975 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.approveCreditMemoByFinanceController() on instance financeSuite.FinanceCreditMemoAPI@4409e975]
+java.lang.Throwable: Method financeSuite.FinanceCreditMemoAPI.approveCreditMemoBySeniorGroupAccountingManager() on instance financeSuite.FinanceCreditMemoAPI@4409e975 depends on not successfully finished methods 
+[financeSuite.FinanceCreditMemoAPI.approveCreditMemoByFinanceController() on instance financeSuite.FinanceCreditMemoAPI@4409e975]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+17:43:13.055 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+17:43:13.056 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: verifyCreditMemoFinalState
+17:43:13.056 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+SKIPPED: FinanceCreditMemoAPI.verifyCreditMemoFinalState
+Reason: verifyCreditMemoFinalState: no created credit memo
+org.testng.SkipException: verifyCreditMemoFinalState: no created credit memo
+	at financeSuite.FinanceCreditMemoAPI.verifyCreditMemoFinalState(FinanceCreditMemoAPI.java:733)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+
+===============================================
+FinanceCreditMemo-Suite
+Total tests run: 9, Passes: 3, Failures: 1, Skips: 5
+===============================================
+
+17:43:13 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@3f1d6a13: 9 ms
+17:43:13 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@78504ce9: 4 ms
+17:43:13 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@acd3460: 6 ms
+17:43:13 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@3ea9a091: 0 ms

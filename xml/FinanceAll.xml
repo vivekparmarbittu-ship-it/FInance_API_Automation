@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="FinanceAll-Suite" verbose="2">
+  <test name="FinanceAll" preserve-order="true">
+    <classes>
+      <class name="financeSuite.FinanceAllAPI"/>
+    </classes>
+  </test>
+</suite>

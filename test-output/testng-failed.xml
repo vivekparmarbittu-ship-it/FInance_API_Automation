@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FinanceCreditMemoAPI]">
+  <test thread-count="5" name="FinanceCreditMemoAPI-Test(failed)">
+    <classes>
+      <class name="financeSuite.FinanceCreditMemoAPI">
+        <methods>
+          <include name="creditMemoCount"/>
+          <include name="approveCreditMemoBySeniorGroupAccountingManager"/>
+          <include name="searchEligibleApInvoice"/>
+          <include name="approvalWorkflow_L1_and_L2_forAmount15k"/>
+          <include name="setUp"/>
+          <include name="createCreditMemo"/>
+          <include name="approvalWorkflow_L1_and_L2_forAmount50k"/>
+          <include name="verifyCreditMemoFinalState"/>
+          <include name="approveCreditMemoByGroupAccountingManager"/>
+          <include name="creditMemoSearch"/>
+          <include name="approvalWorkflow_L1_and_L3_above1Lakh"/>
+          <include name="submitCreditMemoForReview"/>
+          <include name="approveCreditMemoByFinanceController"/>
+          <include name="verifyNoApprovalRequiredWhenAmountBelow10k"/>
+          <include name="approvalWorkflow_L1_and_L3_forAmount150k"/>
+        </methods>
+      </class> <!-- financeSuite.FinanceCreditMemoAPI -->
+    </classes>
+  </test> <!-- FinanceCreditMemoAPI-Test(failed) -->
+</suite> <!-- Failed suite [FinanceCreditMemoAPI] -->

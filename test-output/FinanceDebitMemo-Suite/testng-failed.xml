@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FinanceDebitMemo-Suite]" guice-stage="DEVELOPMENT" verbose="2">
+  <test thread-count="5" name="FinanceDebitMemo(failed)" verbose="2">
+    <classes>
+      <class name="financeSuite.FinanceDebitMemoAPI">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="debitMemoSearch"/>
+          <include name="debitMemoCount"/>
+          <include name="searchEligibleApInvoice"/>
+          <include name="approveDebitMemoByFinanceController"/>
+          <include name="createDebitMemo"/>
+          <include name="setUp"/>
+          <include name="approveDebitMemoByGroupAccountingManager"/>
+          <include name="submitDebitMemoForReview"/>
+          <include name="approveDebitMemoBySeniorGroupAccountingManager"/>
+        </methods>
+      </class> <!-- financeSuite.FinanceDebitMemoAPI -->
+    </classes>
+  </test> <!-- FinanceDebitMemo(failed) -->
+</suite> <!-- Failed suite [FinanceDebitMemo-Suite] -->

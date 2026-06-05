@@ -1,0 +1,101 @@
+Status: 200
+[
+    {
+        "creator": {
+            "userId": 140468,
+            "firstName": "Vivek",
+            "middleName": "",
+            "lastName": "Parmar",
+            "userName": "vivek.parmar@visionwaves.com",
+            "email": "vivek.parmar@visionwaves.com",
+            "organisationRole": {
+                "createdTime": 1772015990000,
+                "modifiedTime": 1772015990000,
+                "id": 847,
+                "name": "Finance Accountant",
+                "displayName": "Finance Accountant",
+                "description": null,
+                "isActive": true,
+                "orgId": null,
+                "customerId": 1
+            }
+        },
+        "createdTime": 1778158981562,
+        "lastModifier": {
+            "userId": 143080,
+            "firstName": "Khushbu",
+            "middleName": null,
+            "lastName": "Patil",
+            "userName": "khushbu.patel@visionwaves.com",
+            "email": "khushbu.patel@visionwaves.com",
+            "organisationRole": {
+                "createdTime": 1772016004000,
+                "modifiedTime": 1772016004000,
+                "id": 848,
+                "name": "Senior Accountant Finance",
+                "displayName": "Senior Accountant Finance",
+                "description": null,
+                "isActive": true,
+                "orgId": null,
+                "customerId": 1
+            }
+        },
+        "modifiedTime": 1778158992414,
+        "id": 1391,
+        "vendorMaster": {
+            "creator": {
+                "userId": 142600,
+                "firstName": "Sourabh",
+                "middleName": null,
+                "lastName": "Jain",
+                "userName": "sourabh@visionwaves.com",
+                "email": "sourabh@visionwaves.com",
+                "organisationRole": {
+                    "createdTime": 1770364227000,
+                    "modifiedTime": 1770364227000,
+                    "id": 825,
+                    "name": "Procurement Lead",
+                    "displayName": "Procurement Lead",
+                    "description": "Procurement Lead",
+                    "isActive": true,
+                    "orgId": null,
+                    "customerId": 1
+                }
+            },
+            "createdTime": 1776785601000,
+            "lastModifier": {
+                "userId": 143080,
+                "firstName": "Khushbu",
+                "middleName": null,
+                "lastName": "Patil",
+                "userName": "khushbu.patel@visionwaves.com",
+                "email": "khushbu.patel@visionwaves.com",
+                "organisationRole": {
+                    "createdTime": 1772016004000,
+                    "modifiedTime": 1772016004000,
+                    "id": 848,
+                    "name": "Senior Accountant Finance",
+                    "displayName": "Senior Accountant Finance",
+                    "description": null,
+                    "isActive": true,
+                    "orgId": null,
+                    "customerId": 1
+                }
+            },
+            "modifiedTime": 1778158992414,
+            "id": 15324,
+            "uuid": null,
+            "address": null,
+            "coaBankAccountId": null,
+            "coaDiscountId": null,
+            "coaReconciliationId": null,
+            "coaTaxId": null,
+            "communicationPreferences": null,
+            "company": null,
+            "contactPersons": null,
+            "deleted": false,
+            "deliveryTerms": null,
+            "email": "thaer@kuzama.co",
+            "incoterms": null,
+            "language": null,
+            "name": "Alkuzama",

@@ -1,0 +1,934 @@
+15:27:47.991 [main] INFO  base.TestRunner - ========= TestRunner Started =========
+15:27:47.993 [main] INFO  base.TestRunner - Loaded config.properties
+15:27:47.997 [main] INFO  base.TestRunner - Selected env = QA
+15:27:47.997 [main] INFO  base.TestRunner - Selected module = finance
+15:27:47.998 [main] INFO  base.TestRunner - Env config loaded: baseUri=https://qa.visionwaves.com, tokenPath=/auth/realms/BNTV/protocol/openid-connect/token, username present?=true
+15:27:48.088 [main] INFO  base.TestRunner - Extracted XML resource 'xml/FinanceAll.xml' to temp file: /var/folders/yn/7sht5m811w1d9qj1n7lf4x8c0000gn/T/testng-suites-1875140518416527375/FinanceAll.xml
+15:27:48.088 [main] INFO  base.TestRunner - Will run TestNG suite files: [/var/folders/yn/7sht5m811w1d9qj1n7lf4x8c0000gn/T/testng-suites-1875140518416527375/FinanceAll.xml]
+15:27:48 DEBUG org.testng.TestNG - suiteXmlPath: "/var/folders/yn/7sht5m811w1d9qj1n7lf4x8c0000gn/T/testng-suites-1875140518416527375/FinanceAll.xml"
+...
+... TestNG [WORKING] by Cédric Beust (cedric@beust.com)
+...
+
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 5 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 4 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 20 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.collectMethodsByGroup() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [Utils] MethodGroupsHelper.sortMethods() took 0 ms.
+15:27:48 INFO  org.testng.internal.Utils - [TestNG] Running:
+  /private/var/folders/yn/7sht5m811w1d9qj1n7lf4x8c0000gn/T/testng-suites-1875140518416527375/FinanceAll.xml
+
+15:27:48 INFO  org.testng.internal.Utils - [Utils] DynamicGraphHelper.createDynamicGraph() took 2 ms.
+15:27:48.320 [main] INFO  base.BaseTestDemoNetSingularity - ========= Base Setup Started =========
+15:27:48.320 [main] INFO  base.BaseTestDemoNetSingularity - Resolved environment: QA
+15:27:48.320 [main] DEBUG base.BaseTestDemoNetSingularity - baseUri already present: https://qa.visionwaves.com
+15:27:48.535 [main] INFO  base.BaseTestDemoNetSingularity - Environment (effective): QA
+15:27:48.535 [main] INFO  base.BaseTestDemoNetSingularity - Base URI: https://qa.visionwaves.com
+15:27:48.536 [main] INFO  utilities.TokenManager - Requesting token for env 'QA' from https://qa.visionwaves.com/auth/realms/BNTV/protocol/openid-connect/token
+15:27:48.538 [main] INFO  utilities.TokenManager - --------------------- Requesting for token -------------------------------------
+15:27:50.416 [main] INFO  utilities.TokenManager - Response of token API: {"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJiX21peUs5dERpc0QtLWxTdGo0blg1QW1hb1gzRUhzcnZHeXNBOVRWRDhjIn0.eyJleHAiOjE3Nzk0NDc0NjksImlhdCI6MTc3OTQ0Mzg2OSwianRpIjoib25ydHJvOmFjYWIyOThjLTBiNzAtYmVkMi03ZDVjLTEyNDc0ZmMwN2E0ZiIsImlzcyI6Imh0dHBzOi8vcWEudmlzaW9ud2F2ZXMuY29tL2F1dGgvcmVhbG1zL0JOVFYiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiNDEzNzkyZmYtMjc2OS00MWRmLTg2ZGItOWIyMTlmNzE5NzIxIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiYmx1ZXdhdmVzIiwic2lkIjoiY2FhOGUzZmMtYThmNS05ZTE3LTcxYjktNTUwYWZhNDVkZGE4IiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyJodHRwczovL3FhLnZpc2lvbndhdmVzLmNvbSJdLCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsInVtYV9wcm90ZWN0aW9uIiwibWFuYWdlLWFjY291bnQtbGlua3MiLCJ2aWV3LXByb2ZpbGUiXX19LCJzY29wZSI6InByb2ZpbGUgZW1haWwiLCJhY3RpdmVEaXZpc2lvbiI6IjE0IiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImN1c3RvbWVyX3V1aWQiOiI1NTBlODQwMC1lMjliLTQxZDQtYTcxNi00NDY2NTU0NDAwMDAiLCJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsImRlZmF1bHQtcm9sZXMtb3NzIiwidW1hX2F1dGhvcml6YXRpb24iXSwib3JnYW5pc2F0aW9uUm9sZSI6IkFjYWRlbWljIGFzc29jaWF0aW9uIiwiZnVsbE5hbWUiOiJNYW5vaiBTaHVrbGEiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJtYW5vai5zaHVrbGFAdmlzaW9ud2F2ZXMuY29tIiwiZ2l2ZW5fbmFtZSI6Ik1hbm9qIiwiaXNGaXJzdFRpbWVMb2dpbiI6ImZhbHNlIiwidXNlcklkIjoiMTM5NDYzIiwiY3VzdG9tZXJOYW1lIjoiQ09SRSIsImN1c3RvbWVySWQiOiIxIiwibmFtZSI6Ik1hbm9qIFNodWtsYSIsInByb2ZpbGVUZW1wbGF0ZSI6IntcIjE0XCI6W1wiRmluYW5jZSBDb25maWd1cmF0b3JcIl19IiwiZmFtaWx5X25hbWUiOiJTaHVrbGEiLCJlbWFpbCI6Im1hbm9qLnNodWtsYUB2aXNpb253YXZlcy5jb20ifQ.J7ge5w3vy8bU6MgcpXRfkVXvlR-Ny6uoqMjuE-PAfX30jyPgQDIgRx_olK1tANiRjSH7BKHcFr-69BI1yDOSe5VHJrAZoFqXzjj-g72D7DBquh8j968M7IyNxZUtnAHd4Hpd0_qZdfa6ttRQL8R6gPxOt-s004HFLKGvD7JOSDo5t5fX8QtuW1s8dxGH_MnLNWzyTW4ypqlyz-Yqv9xCTS-gfNOxk5qNsUY0keLk0kXbkq7Pf7U7ubduTqm5gmP7cqIMiu-n1Urn71WZB0BqI50fmkANk6YUce03weWVy6JSWoDzEB7Z2HKJ3w6ou3Ay91uAk_Nqe1DQOoKvoG74eg","expires_in":3600,"refresh_expires_in":86400,"refresh_token":"eyJhbGciOiJIUzUxMiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICIyMWZmMWI1Mi04NjNkLTQxOTgtYjZjZS02NmVmY2I0YzRiNzUifQ.eyJleHAiOjE3Nzk1MzAyNjksImlhdCI6MTc3OTQ0Mzg2OSwianRpIjoiYzliY2JmMzUtZTkxOC1kY2E3LTY0OTUtODRiOWE3ODM3YzVhIiwiaXNzIjoiaHR0cHM6Ly9xYS52aXNpb253YXZlcy5jb20vYXV0aC9yZWFsbXMvQk5UViIsImF1ZCI6Imh0dHBzOi8vcWEudmlzaW9ud2F2ZXMuY29tL2F1dGgvcmVhbG1zL0JOVFYiLCJzdWIiOiI0MTM3OTJmZi0yNzY5LTQxZGYtODZkYi05YjIxOWY3MTk3MjEiLCJ0eXAiOiJSZWZyZXNoIiwiYXpwIjoiYmx1ZXdhdmVzIiwic2lkIjoiY2FhOGUzZmMtYThmNS05ZTE3LTcxYjktNTUwYWZhNDVkZGE4Iiwic2NvcGUiOiJyb2xlcyB3ZWItb3JpZ2lucyBwcm9maWxlIGFjciBlbWFpbCBiYXNpYyJ9.-6blB_2ab1EYFwaaVMi1zXZiJdeb4E_t1aR7BTn9PwR6SO3Q6B6lSuS2RaDl8rtKT2X206mxyREfCz5EjFF7hg","token_type":"Bearer","not-before-policy":1770382200,"session_state":"caa8e3fc-a8f5-9e17-71b9-550afa45dda8","scope":"profile email"}
+15:27:50.642 [main] INFO  utilities.TokenManager - Token for env 'QA' cached. Expires in 3600 seconds
+15:27:50.642 [main] INFO  base.BaseTestDemoNetSingularity - Token initialized successfully (length=1804)
+15:27:58.104 [main] DEBUG utilities.TokenHumainOS - Returning cached token for role 'humainosGAM'
+15:28:01.817 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:01.818 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: searchCompany
+15:28:01.818 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:01.962 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:01.963 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:02.958 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:02.959 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:03.457 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:03.457 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: companyCount
+15:28:03.458 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:03.462 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:03.462 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:03.528 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:03.528 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:03.539 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:03.539 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: searchCurrency
+15:28:03.539 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:03.543 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:03.544 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:03.640 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:03.641 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:03.668 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:03.668 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createCompany
+15:28:03.668 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:03.671 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:03.672 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:03.732 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:03.733 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:03.792 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:03.792 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:03.800 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:03.800 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+=== createCompany status: 200
+=== createCompany body (first 300): {"status":"success","statusCode":200,"message":"DATA_SAVED_SUCCESSFULLY","response":[{"entityData":{"creator":{"userId":139463,"firstName":null,"middleName":null,"lastName":null,"userName":"Manoj Shukla","email":null,"organisationRole":null},"createdTime":1779443889203,"modifiedTime":1779443889203,"
+=== SENT fiscalYear === Financial year
+15:28:09.241 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:09.241 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createCompanyWithInvalidCompanyCode
+15:28:09.241 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:09.246 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:09.247 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:09.261 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:09.261 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+=== REQUEST BODY ===
+{"data": [{"instanceOf": "Company", "relation": "Parent", "sequence": "Company-1", "gridName": "", "entityData": {"companyName": "Company_1779443889270", "companyCode": "TOO_LONG_CODE_12345", "streetAddress": null, "postalCode": null, "city": null, "country": "SHP", "currency": {"modifiedTime":null,"symbol":"£","country":"Saint Helena","creator":null,"code":"SHP","isoCode":"SHN","countryCode":null,"name":"Saint Helena pound","createdTime":null,"id":1}, "language": "ENG", "phone": null, "mobilePhone": null, "fiscalYear": "Financial year", "fax": null, "email": null, "website": null, "fyStartMonth": "APRIL", "fyEndMonth": "MARCH", "location": {"modifiedTime":1777275422000,"parent":null,"creator":null,"deleted":false,"level":"L3","createdTime":1770123362000,"location":"Asia-Pacific","id":16,"locationCode":"2400","type":"INTERNATIONAL","posting":null}, "vatRegistrationNo": null, "registrationNo": "7443889467"}}], "entityMap": {"identifier1": "FINANCIAL-ACCOUNTING_APP_NAME", "identifier2": "Company", "entityType": "Company", "identifier3": "$formvalue.company.id"}, "formName": "financial-accounting_company_form"}
+15:28:10.525 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:10.525 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createCompanyWithMissingMandatoryFields
+15:28:10.525 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:10.530 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:10.531 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:10.564 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:10.565 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:11.485 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:11.485 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createCompanyWithUnauthorizedUser
+15:28:11.485 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:11.490 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:11.491 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:11.503 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:11.504 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:23.677 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:23.677 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: profitCenterCount
+15:28:23.677 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:23.688 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:23.690 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:23.771 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:23.772 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: verifyCompanySearchFindsCreatedCompany
+15:28:23.772 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:23.775 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:23.775 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:23.858 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:23.858 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: profitCenterSearch
+15:28:23.858 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:23.860 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:23.860 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:24.285 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:24.285 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createProfitCenter
+15:28:24.285 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:24.288 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:24.289 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:24.294 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:24.295 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+createdProfitCenterId: 258
+15:28:27.022 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:27.022 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createProfitCenterWithInvalidCode
+15:28:27.022 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:27.026 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:27.026 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:27.034 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:27.034 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:27.089 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:27.089 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createProfitCenterWithMissingMandatoryFields
+15:28:27.089 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:27.091 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:27.091 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:27.096 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:27.096 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:27.182 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:27.182 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createProfitCenterWithUnauthorizedUser
+15:28:27.182 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:27.184 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:27.184 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:27.191 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:27.192 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+FAILED: FinanceAllAPI.createProfitCenterWithUnauthorizedUser
+Reason: The following asserts failed:
+	Accountant (Vivek): Expected 401/403 but got statusCode=422,
+	Senior Accountant (Khushbu): Expected 401/403 but got statusCode=422
+java.lang.AssertionError: The following asserts failed:
+	Accountant (Vivek): Expected 401/403 but got statusCode=422,
+	Senior Accountant (Khushbu): Expected 401/403 but got statusCode=422
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at financeSuite.FinanceAllAPI.createProfitCenterWithUnauthorizedUser(FinanceAllAPI.java:4401)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+15:28:27.504 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:27.504 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: updateProfitCenter
+15:28:27.504 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:27.508 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:27.508 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:27.516 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:27.516 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:27.582 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:27.582 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: costCenterCount
+15:28:27.582 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:27.584 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:27.584 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:27.678 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:27.678 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: costCenterSearch
+15:28:27.678 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:27.680 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:27.681 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:28.120 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:28.120 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createCostCenter
+15:28:28.120 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:28.122 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:28.122 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:28.128 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:28.128 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+FAILED: FinanceAllAPI.createCostCenter
+Reason: Missing expected path in response: id
+java.lang.AssertionError: Missing expected path in response: id
+	at financeSuite.ApiTestUtils.validateResponseBody(ApiTestUtils.java:283)
+	at financeSuite.FinanceAllAPI.createCostCenter(FinanceAllAPI.java:1174)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+15:28:28.378 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:28.379 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createCostCenterWithInvalidCode
+15:28:28.379 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:28.381 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:28.382 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:28.390 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:28.390 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:28.457 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:28.457 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createCostCenterWithMissingMandatoryFields
+15:28:28.458 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:28.460 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:28.460 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:28.465 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:28.465 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:28.535 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:28.535 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createCostCenterWithUnauthorizedUser
+15:28:28.535 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:28.537 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:28.537 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:28.544 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:28.544 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+FAILED: FinanceAllAPI.createCostCenterWithUnauthorizedUser
+Reason: The following asserts failed:
+	Accountant (Vivek): Expected 401/403 but got statusCode=422,
+	Senior Accountant (Khushbu): Expected 401/403 but got statusCode=422
+java.lang.AssertionError: The following asserts failed:
+	Accountant (Vivek): Expected 401/403 but got statusCode=422,
+	Senior Accountant (Khushbu): Expected 401/403 but got statusCode=422
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at financeSuite.FinanceAllAPI.createCostCenterWithUnauthorizedUser(FinanceAllAPI.java:1410)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.updateCostCenter
+Reason: Method financeSuite.FinanceAllAPI.updateCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.updateCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.deactivateCostCenter
+Reason: Method financeSuite.FinanceAllAPI.deactivateCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.updateCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.deactivateCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.updateCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+15:28:36.690 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:36.691 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: glSearchCompany
+15:28:36.692 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:36.701 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:36.701 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:37.100 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:37.100 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: searchChartOfAccountsMaster
+15:28:37.100 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:37.102 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:37.103 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+chartOfAccountsMasterId: 
+15:28:37.174 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:37.174 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: chartOfAccountsCountV3
+15:28:37.174 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:37.176 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:37.176 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:48.463 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:48.464 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: chartOfAccountsSearchV3
+15:28:48.464 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:48.479 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:48.479 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+/apim/financial-accounting/1.0/rest/chart-of-accounts/search/v3
+15:28:49.309 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:49.309 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createChartOfAccounts
+15:28:49.309 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:49.311 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:49.311 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:49.511 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:49.511 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:51.015 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:51.015 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createGlAccountWithInvalidData
+15:28:51.015 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:51.017 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:51.017 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:51.201 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:51.201 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createGlAccountWithMissingMandatoryFields
+15:28:51.201 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:51.203 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:51.203 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:51.253 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:51.253 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createGlAccountWithUnauthorizedUser
+15:28:51.253 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:51.256 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:51.256 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+FAILED: FinanceAllAPI.createGlAccountWithUnauthorizedUser
+Reason: The following asserts failed:
+	Accountant (Vivek): Expected 401/403 but got statusCode=200,
+	Senior Accountant (Khushbu): Expected 401/403 but got statusCode=422
+java.lang.AssertionError: The following asserts failed:
+	Accountant (Vivek): Expected 401/403 but got statusCode=200,
+	Senior Accountant (Khushbu): Expected 401/403 but got statusCode=422
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at financeSuite.FinanceAllAPI.createGlAccountWithUnauthorizedUser(FinanceAllAPI.java:2141)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+15:28:51.664 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:51.664 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: updateChartOfAccounts
+15:28:51.664 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:51.669 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:51.670 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:51.767 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:51.767 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: searchChartOfAccountsForApproval
+15:28:51.767 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:51.769 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:51.770 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+FAILED: FinanceAllAPI.searchChartOfAccountsForApproval
+Reason: searchChartOfAccountsForApproval: processInstanceId must be present
+java.lang.AssertionError: searchChartOfAccountsForApproval: processInstanceId must be present
+	at org.testng.AssertJUnit.fail(AssertJUnit.java:65)
+	at org.testng.AssertJUnit.assertTrue(AssertJUnit.java:23)
+	at org.testng.AssertJUnit.assertNotNull(AssertJUnit.java:347)
+	at financeSuite.FinanceAllAPI.searchChartOfAccountsForApproval(FinanceAllAPI.java:2346)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.reviewChartOfAccounts
+Reason: Method financeSuite.FinanceAllAPI.reviewChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsForApproval() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.reviewChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsForApproval() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.updateWorkflowActionChartOfAccounts
+Reason: Method financeSuite.FinanceAllAPI.updateWorkflowActionChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.reviewChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.updateWorkflowActionChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.reviewChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.chartOfAccountsSearchBeforeBalanceCheck
+Reason: Method financeSuite.FinanceAllAPI.chartOfAccountsSearchBeforeBalanceCheck() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.updateWorkflowActionChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.chartOfAccountsSearchBeforeBalanceCheck() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.updateWorkflowActionChartOfAccounts() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.checkChartOfAccountsBalance
+Reason: Method financeSuite.FinanceAllAPI.checkChartOfAccountsBalance() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.chartOfAccountsSearchBeforeBalanceCheck() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.checkChartOfAccountsBalance() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.chartOfAccountsSearchBeforeBalanceCheck() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.setAccountStatus
+Reason: Method financeSuite.FinanceAllAPI.setAccountStatus() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.checkChartOfAccountsBalance() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.setAccountStatus() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.checkChartOfAccountsBalance() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.reviewChartOfAccountsForDeactivate
+Reason: Method financeSuite.FinanceAllAPI.reviewChartOfAccountsForDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.setAccountStatus() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.reviewChartOfAccountsForDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.setAccountStatus() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.searchChartOfAccountsForDeactivate
+Reason: Method financeSuite.FinanceAllAPI.searchChartOfAccountsForDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.reviewChartOfAccountsForDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.searchChartOfAccountsForDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.reviewChartOfAccountsForDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.updateWorkflowActionDeactivate
+Reason: Method financeSuite.FinanceAllAPI.updateWorkflowActionDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsForDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.updateWorkflowActionDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsForDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.searchChartOfAccountsForReactivate
+Reason: Method financeSuite.FinanceAllAPI.searchChartOfAccountsForReactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.updateWorkflowActionDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.searchChartOfAccountsForReactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.updateWorkflowActionDeactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.updateWorkflowActionReactivate
+Reason: Method financeSuite.FinanceAllAPI.updateWorkflowActionReactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsForReactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.updateWorkflowActionReactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.searchChartOfAccountsForReactivate() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+15:28:51.944 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:51.944 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: journalEntryCount
+15:28:51.944 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:51.965 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:51.966 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:52.031 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:52.031 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: journalEntrySearch
+15:28:52.032 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:52.033 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:52.033 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:52.842 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:52.842 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: generateJeNumber
+15:28:52.842 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:52.844 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:52.844 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+jeNumber: JE-0000001286
+15:28:54.899 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:54.899 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createJournalEntry
+15:28:54.899 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:54.902 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:54.902 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:54.911 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:54.911 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:54.918 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:54.918 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+jeId from create response: 1571
+15:28:55.938 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:55.938 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createJournalEntryWithInvalidData
+15:28:55.938 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:55.940 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:55.941 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:55.949 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:55.949 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:56.132 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:56.132 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createJournalEntryWithMissingMandatoryFields
+15:28:56.132 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:56.134 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:56.135 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:56.193 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:56.193 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: createJournalEntryWithUnauthorizedUser
+15:28:56.193 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:56.195 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:56.195 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:28:56.200 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:56.200 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+FAILED: FinanceAllAPI.createJournalEntryWithUnauthorizedUser
+Reason: The following asserts failed:
+	Group Accounting Manager (Rohini): Expected 401/403 but got statusCode=200
+java.lang.AssertionError: The following asserts failed:
+	Group Accounting Manager (Rohini): Expected 401/403 but got statusCode=200
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at financeSuite.FinanceAllAPI.createJournalEntryWithUnauthorizedUser(FinanceAllAPI.java:3560)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+15:28:57.221 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:57.221 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: approvalBySeniorAccountant
+15:28:57.221 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:28:57.228 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:28:57.228 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:29:00.531 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:29:00.531 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: approvalByFinanceController
+15:29:00.531 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:29:00.534 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:29:00.535 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+FAILED: FinanceAllAPI.approvalByFinanceController
+Reason: The following asserts failed:
+	approvalByFinanceController: Expected one of [200], got 405
+java.lang.AssertionError: The following asserts failed:
+	approvalByFinanceController: Expected one of [200], got 405
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at financeSuite.FinanceAllAPI.approvalByFinanceController(FinanceAllAPI.java:3811)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.approvalByGroupAccountingManager
+Reason: Method financeSuite.FinanceAllAPI.approvalByGroupAccountingManager() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.approvalByFinanceController() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.approvalByGroupAccountingManager() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.approvalByFinanceController() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.verifyJePostedStatus
+Reason: Method financeSuite.FinanceAllAPI.verifyJePostedStatus() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.approvalByGroupAccountingManager() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.verifyJePostedStatus() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.approvalByGroupAccountingManager() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+15:29:00.610 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:29:00.610 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: duplicateCompanyName
+15:29:00.610 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:29:00.613 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:29:00.613 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:29:00.620 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:29:00.621 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:29:02.194 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:29:02.194 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: duplicateCompanyCode
+15:29:02.194 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:29:02.197 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:29:02.197 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:29:02.207 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:29:02.207 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:29:03.118 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:29:03.119 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: duplicateProfitCenterName
+15:29:03.119 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:29:03.124 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:29:03.124 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:29:03.134 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:29:03.135 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:29:03.273 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:29:03.273 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: duplicateProfitCenterCode
+15:29:03.273 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:29:03.275 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:29:03.275 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+15:29:03.311 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:29:03.311 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+SKIPPED: FinanceAllAPI.duplicateCostCenterName
+Reason: Method financeSuite.FinanceAllAPI.duplicateCostCenterName() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.duplicateCostCenterName() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+SKIPPED: FinanceAllAPI.duplicateCostCenterCode
+Reason: Method financeSuite.FinanceAllAPI.duplicateCostCenterCode() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+java.lang.Throwable: Method financeSuite.FinanceAllAPI.duplicateCostCenterCode() on instance financeSuite.FinanceAllAPI@5d2a4eed depends on not successfully finished methods 
+[financeSuite.FinanceAllAPI.createCostCenter() on instance financeSuite.FinanceAllAPI@5d2a4eed]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at base.TestRunner.main(TestRunner.java:99)
+15:29:03.457 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:29:03.457 [main] INFO  base.BaseTestDemoNetSingularity - Running Test Method: duplicateGlAccountName
+15:29:03.457 [main] INFO  base.BaseTestDemoNetSingularity - -------------------------------------------------------
+15:29:03.460 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
+15:29:03.460 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
+
+===============================================
+FinanceAll-Suite
+Total tests run: 61, Passes: 38, Failures: 7, Skips: 16
+===============================================
+
+15:29:03 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.XMLReporter@590f806a: 19 ms
+15:29:03 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.EmailableReporter2@36696821: 6 ms
+15:29:03 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.reporters.FailedReporter@6dc7b7f: 18 ms
+15:29:03 INFO  org.testng.internal.Utils - [TestNG] Time taken by org.testng.internal.ExitCodeListener@4425b6ed: 1 ms

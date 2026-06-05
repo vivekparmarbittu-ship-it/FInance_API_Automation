@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [FinanceAll-Sanity-Suite]" guice-stage="DEVELOPMENT" verbose="2">
+  <test thread-count="5" name="FinanceAll-Sanity(failed)" verbose="2">
+    <groups>
+      <run>
+        <include name="Sanity"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="financeSuite.FinanceAllAPI">
+        <methods>
+          <include name="chartOfAccountsSearchV3"/>
+          <include name="beforeMethod"/>
+          <include name="profitCenterCount"/>
+          <include name="chartOfAccountsCountV3"/>
+          <include name="costCenterSearch"/>
+          <include name="setUp"/>
+          <include name="glSearchCompany"/>
+          <include name="searchChartOfAccountsMaster"/>
+          <include name="profitCenterSearch"/>
+          <include name="journalEntrySearch"/>
+          <include name="companyCount"/>
+          <include name="journalEntryCount"/>
+          <include name="searchCurrency"/>
+          <include name="costCenterCount"/>
+          <include name="generateJeNumber"/>
+          <include name="searchCompany"/>
+        </methods>
+      </class> <!-- financeSuite.FinanceAllAPI -->
+    </classes>
+  </test> <!-- FinanceAll-Sanity(failed) -->
+</suite> <!-- Failed suite [FinanceAll-Sanity-Suite] -->
