@@ -1,0 +1,197 @@
+name: Run Finance API Tests - Environment Based
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Select environment to test'
+        required: true
+        default: 'SIT'
+        type: choice
+        options:
+          - SIT
+          - DEMO
+          - QA
+
+jobs:
+  test-sit:
+    runs-on: ubuntu-latest
+    environment: SIT
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+          cache: maven
+      
+      - name: Display Environment Info
+        run: |
+          echo "🔧 Environment: SIT"
+          echo "🌐 Base URI: ${{ secrets.BASE_URI }}"
+          echo "👤 Admin User: ${{ secrets.ADMIN_USERNAME }}"
+      
+      - name: Run API Tests - Admin Role
+        env:
+          BASE_URI: ${{ secrets.BASE_URI }}
+          ADMIN_USERNAME: ${{ secrets.ADMIN_USERNAME }}
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+        run: |
+          echo "🧪 Running API tests as Admin..."
+          # Replace with your actual test command
+          # mvn test -Denv=SIT -Duser=$ADMIN_USERNAME -Dpassword=$ADMIN_PASSWORD
+      
+      - name: Run API Tests - Accountant Role
+        env:
+          BASE_URI: ${{ secrets.BASE_URI }}
+          ACCOUNTANT_USERNAME: ${{ secrets.ACCOUNTANT_USERNAME }}
+          ACCOUNTANT_PASSWORD: ${{ secrets.ACCOUNTANT_PASSWORD }}
+        run: |
+          echo "🧪 Running API tests as Accountant..."
+          # Replace with your actual test command
+          # mvn test -Denv=SIT -Duser=$ACCOUNTANT_USERNAME -Dpassword=$ACCOUNTANT_PASSWORD
+      
+      - name: Run API Tests - Senior Accountant Role
+        env:
+          BASE_URI: ${{ secrets.BASE_URI }}
+          SENIOR_ACCOUNTANT_USERNAME: ${{ secrets.SENIOR_ACCOUNTANT_USERNAME }}
+          SENIOR_ACCOUNTANT_PASSWORD: ${{ secrets.SENIOR_ACCOUNTANT_PASSWORD }}
+        run: |
+          echo "🧪 Running API tests as Senior Accountant..."
+          # Replace with your actual test command
+          # mvn test -Denv=SIT -Duser=$SENIOR_ACCOUNTANT_USERNAME -Dpassword=$SENIOR_ACCOUNTANT_PASSWORD
+      
+      - name: Run API Tests - Finance Controller Role
+        env:
+          BASE_URI: ${{ secrets.BASE_URI }}
+          FINANCE_CONTROLLER_USERNAME: ${{ secrets.FINANCE_CONTROLLER_USERNAME }}
+          FINANCE_CONTROLLER_PASSWORD: ${{ secrets.FINANCE_CONTROLLER_PASSWORD }}
+        run: |
+          echo "🧪 Running API tests as Finance Controller..."
+          # Replace with your actual test command
+          # mvn test -Denv=SIT -Duser=$FINANCE_CONTROLLER_USERNAME -Dpassword=$FINANCE_CONTROLLER_PASSWORD
+      
+      - name: Run API Tests - Senior Group Accounting Manager Role
+        env:
+          BASE_URI: ${{ secrets.BASE_URI }}
+          SENIOR_GROUP_ACCOUNTING_MANAGER_USERNAME: ${{ secrets.SENIOR_GROUP_ACCOUNTING_MANAGER_USERNAME }}
+          SENIOR_GROUP_ACCOUNTING_MANAGER_PASSWORD: ${{ secrets.SENIOR_GROUP_ACCOUNTING_MANAGER_PASSWORD }}
+        run: |
+          echo "🧪 Running API tests as Senior Group Accounting Manager..."
+          # Replace with your actual test command
+          # mvn test -Denv=SIT -Duser=$SENIOR_GROUP_ACCOUNTING_MANAGER_USERNAME -Dpassword=$SENIOR_GROUP_ACCOUNTING_MANAGER_PASSWORD
+      
+      - name: Generate Test Report
+        if: always()
+        run: |
+          echo "📊 Test execution completed for SIT environment"
+      
+      - name: Upload Test Results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results-sit
+          path: target/surefire-reports/
+          retention-days: 30
+
+  test-demo:
+    runs-on: ubuntu-latest
+    environment: DEMO
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'DEMO'
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+          cache: maven
+      
+      - name: Display Environment Info
+        run: |
+          echo "🔧 Environment: DEMO"
+          echo "🌐 Base URI: ${{ secrets.BASE_URI }}"
+          echo "👤 Admin User: ${{ secrets.ADMIN_USERNAME }}"
+      
+      - name: Run API Tests - All Roles (DEMO)
+        env:
+          BASE_URI: ${{ secrets.BASE_URI }}
+          ADMIN_USERNAME: ${{ secrets.ADMIN_USERNAME }}
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+          ACCOUNTANT_USERNAME: ${{ secrets.ACCOUNTANT_USERNAME }}
+          ACCOUNTANT_PASSWORD: ${{ secrets.ACCOUNTANT_PASSWORD }}
+          SENIOR_ACCOUNTANT_USERNAME: ${{ secrets.SENIOR_ACCOUNTANT_USERNAME }}
+          SENIOR_ACCOUNTANT_PASSWORD: ${{ secrets.SENIOR_ACCOUNTANT_PASSWORD }}
+          FINANCE_CONTROLLER_USERNAME: ${{ secrets.FINANCE_CONTROLLER_USERNAME }}
+          FINANCE_CONTROLLER_PASSWORD: ${{ secrets.FINANCE_CONTROLLER_PASSWORD }}
+          SENIOR_GROUP_ACCOUNTING_MANAGER_USERNAME: ${{ secrets.SENIOR_GROUP_ACCOUNTING_MANAGER_USERNAME }}
+          SENIOR_GROUP_ACCOUNTING_MANAGER_PASSWORD: ${{ secrets.SENIOR_GROUP_ACCOUNTING_MANAGER_PASSWORD }}
+        run: |
+          echo "🧪 Running all API tests on DEMO environment..."
+          # mvn test -Denv=DEMO
+      
+      - name: Upload Test Results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results-demo
+          path: target/surefire-reports/
+          retention-days: 30
+
+  test-qa:
+    runs-on: ubuntu-latest
+    environment: QA
+    if: github.event_name == 'workflow_dispatch' && github.event.inputs.environment == 'QA'
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '11'
+          distribution: 'temurin'
+          cache: maven
+      
+      - name: Display Environment Info
+        run: |
+          echo "🔧 Environment: QA"
+          echo "🌐 Base URI: ${{ secrets.BASE_URI }}"
+          echo "👤 Admin User: ${{ secrets.ADMIN_USERNAME }}"
+      
+      - name: Run API Tests - All Roles (QA)
+        env:
+          BASE_URI: ${{ secrets.BASE_URI }}
+          ADMIN_USERNAME: ${{ secrets.ADMIN_USERNAME }}
+          ADMIN_PASSWORD: ${{ secrets.ADMIN_PASSWORD }}
+          ACCOUNTANT_USERNAME: ${{ secrets.ACCOUNTANT_USERNAME }}
+          ACCOUNTANT_PASSWORD: ${{ secrets.ACCOUNTANT_PASSWORD }}
+          SENIOR_ACCOUNTANT_USERNAME: ${{ secrets.SENIOR_ACCOUNTANT_USERNAME }}
+          SENIOR_ACCOUNTANT_PASSWORD: ${{ secrets.SENIOR_ACCOUNTANT_PASSWORD }}
+          FINANCE_CONTROLLER_USERNAME: ${{ secrets.FINANCE_CONTROLLER_USERNAME }}
+          FINANCE_CONTROLLER_PASSWORD: ${{ secrets.FINANCE_CONTROLLER_PASSWORD }}
+          SENIOR_GROUP_ACCOUNTING_MANAGER_USERNAME: ${{ secrets.SENIOR_GROUP_ACCOUNTING_MANAGER_USERNAME }}
+          SENIOR_GROUP_ACCOUNTING_MANAGER_PASSWORD: ${{ secrets.SENIOR_GROUP_ACCOUNTING_MANAGER_PASSWORD }}
+        run: |
+          echo "🧪 Running all API tests on QA environment..."
+          # mvn test -Denv=QA
+      
+      - name: Upload Test Results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results-qa
+          path: target/surefire-reports/
+          retention-days: 30
